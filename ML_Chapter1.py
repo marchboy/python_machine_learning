@@ -45,7 +45,7 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 
-os.chdir("E:/MyStudy/Python/PyScript/Python机器学习及实践/Datasets/Breast_Cancer")
+os.chdir("./Python机器学习及实践/Datasets/Breast_Cancer")
 df_train = pd.read_csv("breast-cancer-train.csv")
 df_test = pd.read_csv("breast-cancer-test.csv")
 print('-' * 35)
