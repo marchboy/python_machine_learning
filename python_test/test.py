@@ -81,5 +81,5 @@ print(data.describe())
 print(data[0:10][["fecha", "rnd_1"]])
 print(data[0:10])
 print('-' * 50)
-print(data.loc[1:5])  # 推荐此方法进行行列选择，而不是[]
+print(data.loc[1:5])  # 推荐此方法进行行列选择，而不是[],注意与iloc的区别
 
