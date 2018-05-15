@@ -97,9 +97,3 @@ plt.show()
 # data = data.replace(to_replace='?', value=np.nan)
 # data = data.dropna(how='any')
 # print(data.shape)
-
-
-
-
-
-
