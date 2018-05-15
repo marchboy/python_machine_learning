@@ -55,45 +55,36 @@ print(df_test[1:10])
 df_test_negative = df_test.loc[df_test['Type'] == 0][['Clump Thickness', 'Cell Size']]
 df_test_positive = df_test.loc[df_test['Type'] == 1][['Clump Thickness', 'Cell Size']]
 
+# 绘制正负样本点的散点图
 plt.scatter(df_test_negative['Clump Thickness'], df_test_negative['Cell Size'], marker='o', s=200, c='red')
 plt.scatter(df_test_positive['Clump Thickness'], df_test_positive['Cell Size'], marker='x', s=150, c='black')
 plt.xlabel('Clump Thickness')
 plt.ylabel('Cell Size')
 # plt.show()
 
+# 绘制一条随机直线的分类结果图
 intercept = np.random.random([1])
 coef = np.random.random([2])
 lx = np.arange(0, 12)
 ly = (-intercept - lx * coef[0]) / coef[1]
+# plt.plot(lx, ly, c='yellow')
 
+# 采用逻辑斯蒂回归分类，并绘制分类结果图
 lr = LogisticRegression()
 lr.fit(df_train[['Clump Thickness', 'Cell Size']], df_train['Type'])
-
-predict = lr.predict(df_test[['Clump Thickness', 'Cell Size']])
-acc = metrics.accuracy_score(df_test['Type'], predict)
-precision = metrics.precision_score(df_test['Type'], predict)
-accuracy = lr.score(df_test[['Clump Thickness', 'Cell Size']], df_test['Type'])
-print("accuracy is: ", accuracy)
-print("acc is: ", acc)
-print("precision is: ", precision)
-print("predict is: ", predict)
-
 intercept = lr.intercept_
 coef = lr.coef_[0, :]
 ly = (-intercept - lx * coef[0]) / coef[1]
 plt.plot(lx, ly, c='blue')
-
 plt.show()
 
-# import pandas as pd
-# import numpy as np
-#
-# columns_names = ['Sample code number', 'Clump Thickness', 'Uniformity of Cell Size',
-#                  'Uniformity of Cell Shape', 'Marginal Adhesion', 'Single Epithelial Cell Size',
-#                  'Bare Nuclei', 'Bland Chromatin', 'Normal Nucleoli', 'Mitoses', 'Class']
-# data = pd.read_csv(
-#     'https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data',
-#     names=columns_names)
-# data = data.replace(to_replace='?', value=np.nan)
-# data = data.dropna(how='any')
-# print(data.shape)
+# 打印分类性能
+predict = lr.predict(df_test[['Clump Thickness', 'Cell Size']])
+acc = metrics.accuracy_score(df_test['Type'], predict)
+precision = metrics.precision_score(df_test['Type'], predict)
+accuracy = lr.score(df_test[['Clump Thickness', 'Cell Size']], df_test['Type'])
+
+print("accuracy is: ", accuracy)
+print("acc is: ", acc)
+print("precision is: ", precision)
+print("predict is: ", predict)
