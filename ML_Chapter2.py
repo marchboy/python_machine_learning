@@ -82,3 +82,63 @@ test_transformer = minmaxTransformer.transform(test)
 test_transformer2 = minmaxTransformer.fit_transform(test)
 print(test_transformer, '\n', test_transformer2)
 
+##################################################################
+# Support Vector Machine
+
+from sklearn.datasets import load_digits
+from sklearn.model_selection import train_test_split
+from sklearn.svm import LinearSVC
+from sklearn.metrics import classification_report
+
+
+digits = load_digits()
+print(digits.data.shape)
+
+X_train, X_test, y_train, y_test = train_test_split(digits.data, digits.target, test_size=0.25, random_state=33)
+print(y_train.shape, '\n', X_test.shape)
+
+
+# 标准化
+ss = StandardScaler()
+X_train = ss.fit_transform(X_train)
+X_test = ss.transform(X_test)
+
+# 初始化线性假设的支持向量机分类器
+lsvc = LinearSVC()
+# 训练模型
+lsvc.fit(X_train, y_train)
+y_predict = lsvc.predict(X_test)
+
+# 性能评估
+print('The accuracy of Linear SVC is: ', lsvc.score(X_test, y_test))
+print(classification_report(y_test, y_predict, target_names=digits.target_names.astype(str)))
+
+
+##################################################################
+# Naive Bayes
+
+from sklearn.datasets import fetch_20newsgroups
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import classification_report
+
+news = fetch_20newsgroups(subset='all')
+print(len(news.data))
+print(news.data[0])
+
+
+X_train, X_test, y_train, y_test = train_test_split(news.data, news.target, test_size=0.25, random_state=33)
+
+vec = CountVectorizer()
+X_train = vec.fit_transform(X_train)
+X_test = vec.transform(X_test)
+
+# 初始化
+mnb = MultinomialNB()
+mnb.fit(X_train, y_train)
+y_predict=mnb.predict(X_test)
+
+# 性能评估
+print('The accuracy of Navie Bayes Classifier is:', mnb.score(X_test, y_test))
+print(classification_report(y_test, y_predict, target_names=news.target_names))
