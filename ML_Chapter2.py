@@ -92,6 +92,8 @@ from sklearn.metrics import classification_report
 
 
 digits = load_digits()
+print('='*60)
+print(type(digits))
 print(digits.data.shape)
 
 X_train, X_test, y_train, y_test = train_test_split(digits.data, digits.target, test_size=0.25, random_state=33)
@@ -121,7 +123,8 @@ from sklearn.datasets import fetch_20newsgroups
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report, precision_score
+from sklearn.metrics import confusion_matrix
 
 news = fetch_20newsgroups(subset='all')
 print(len(news.data))
@@ -136,9 +139,28 @@ X_test = vec.transform(X_test)
 
 # 初始化
 mnb = MultinomialNB()
+print(mnb)
+print(mnb._get_coef)
+# print(mnb.coef_)
+# print(mnb.intercept_)
 mnb.fit(X_train, y_train)
+print(mnb)
+print(mnb.coef_)
+print(mnb.intercept_)
 y_predict=mnb.predict(X_test)
 
 # 性能评估
 print('The accuracy of Navie Bayes Classifier is:', mnb.score(X_test, y_test))
-print(classification_report(y_test, y_predict, target_names=news.target_names))
+print(classification_report(y_test, y_predict, target_names=news.target_names, digits=5))
+print('-'*50)
+confu_matrix = confusion_matrix(y_test, y_predict)
+# confu_matrix_ = confusion_matrix(y_predict,y_test)
+print(np.array_str(confu_matrix, 100))
+# print(np.array_str(confu_matrix_,100))
+
+precision = precision_score(y_test, y_predict, average='macro')
+print(precision)
+precision = precision_score(y_test, y_predict, average='micro')
+print(precision)
+precision = precision_score(y_test, y_predict, average='weighted')
+print(precision)
