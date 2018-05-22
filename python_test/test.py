@@ -45,7 +45,7 @@ for year in years:
 names = pd.concat(pieces, ignore_index= True)
 print(len(names))
 
-"""
+
 
 # A, B, C = input().split(' ')
 # print("A + B + C = ", int(A) + int(B) + int(C))
@@ -54,6 +54,23 @@ print(len(names))
 
 # http://bbs.fishc.com/thread-79821-1-1.html
 # https://blog.csdn.net/ly_ysys629/article/details/55224284
+# https://blog.csdn.net/xw_classmate/article/details/51333646  讲的不错
+
+# loc[:,['tip','total_bill']]才能索引列，
+# loc通过行标签索引行数据，即通过index和columns的值进行选取。loc方法有两个参数，按顺序控制行列选取。
+
+# iloc：通过行号选取数据，即通过数据所在的自然行列数为选取数据。iloc方法也有两个参数，按顺序控制行列选取
+# ix:混合索引，同时通过标签和行号选取数据。df.ix[1:3,['b','c']]
+# at/iat：通过标签或行号获取某个数值的具体位置。
+
+
+# 总结：
+# 1）.loc,.iloc,.ix,只加第一个参数如.loc[[1,2]],.iloc([2:3]),.ix[2]…则进行的是行选择---- 
+# 2）.loc,.at，选列是只能是列名，不能是position---- .iloc[:,[1]], 
+# 3）.iloc,.iat，选列是只能是position，不能是列名 
+# 4）df[]只能进行行选择，或列选择，不能同时进行列选择，列选择只能是列名。
+"""
+
 import pandas as pd
 import numpy as np
 import random
@@ -63,20 +80,29 @@ df = pd.DataFrame(
     "tip":[1.01, 1.66, 3.50, 3.31, 3.61],
     "sex":['Female', 'Male', 'Male', 'Male', 'Female']})
 
-# print(df.dtypes, '\n')
-# print(df.index, '\n')
-# print(df.columns, '\n')
-# print(df.values, '\n')
-# print(df)
+print(df.dtypes, '\n')
+print(df.index, '\n')
+print(df.columns, '\n')
+print(df.values, '\n')
+print(df)
+
+print(df.loc[1:3,['total_bill', 'tip']])
+print(df.loc[0:3, 'tip':'total_bill'])
+
+print(df.iloc[1:3, [1,2]])
+print(df.iloc[1:3, 1:3])
+print(df.loc[1:3], '\n', df.iloc[1:3])
 
 print('-' * 50)
+
+
 rnd_1 = [random.randrange(1,20) for x in range(1000)]
 rnd_2 = [random.randrange(1,20) for x in range(1000)]
 rnd_3 = [random.randrange(1,20) for x in range(1000)]
 fecha = pd.date_range('2012-4-10', '2015-1-4')
 
 data = pd.DataFrame({'fecha':fecha, 'rnd_1':rnd_1, 'rnd_2':rnd_2, 'rnd_3':rnd_3})
-print(data)
+# print(data)
 print(data.describe())
 
 print(data[0:10][["fecha", "rnd_1"]])

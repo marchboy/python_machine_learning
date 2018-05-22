@@ -9,6 +9,7 @@ from sklearn.svm import LinearSVC
 from sklearn.datasets import make_classification
 
 from imblearn.over_sampling import RandomOverSampler, SMOTE, ADASYN
+from imblearn.pipeline import make_pipeline
 
 
 def create_database(n_samples=1000, weights=[0.01, 0.01, 0.98], n_classes=3):
@@ -58,19 +59,31 @@ def plot_decision_function(X, y, clf, ax):
 
 
 if __name__ == '__main__':
-    fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(15, 12))
-    ax_arr = (ax1, ax2, ax3, ax4)
-    weights_arr = ((0.01, 0.01, 0.98), (0.01, 0.05, 0.94),
-                (0.2, 0.1, 0.7), (0.33, 0.33, 0.33))
+    # fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(15, 12))
+    # ax_arr = (ax1, ax2, ax3, ax4)
+    # print(ax_arr)
+    # weights_arr = ((0.01, 0.01, 0.98), (0.01, 0.05, 0.94),
+    #             (0.2, 0.1, 0.7), (0.33, 0.33, 0.33))
 
-    for ax, weights in zip(ax_arr, weights_arr):
-        X, y = create_database(n_samples=1000, weights=weights)
-        clf = LinearSVC()
-        clf.fit(X, y)
-        plot_decision_function(X, y, clf, ax)
-        ax.set_title("Linear SVC with y={}".format(Counter(y)))
+    # for ax, weights in zip(ax_arr, weights_arr):
+    #     X, y = create_database(n_samples=1000, weights=weights)
+    #     clf = LinearSVC()
+    #     clf.fit(X, y)
+    #     plot_decision_function(X, y, clf, ax)
+    #     ax.set_title("Linear SVC with y={}".format(Counter(y)))
+    # fig.tight_layout()
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 7))
+    X, y = create_database(n_samples=10000, weights=(0.01, 0.05, 0.94))
+    clf = LinearSVC()
+    clf.fit(X,y)
+    plot_decision_function(X, y, clf, ax1)
+    ax1.set_title('Linear SVC with y={}'.format(Counter(y)))
+    pipe = make_pipeline(RandomOverSampler(random_state=0), LinearSVC())
+    pipe.fit(X, y)
+    plot_decision_function(X, y, pipe, ax2)
+    ax2.set_title('Decision fuction for RandomOverSampler')
     fig.tight_layout()
-    
 
 # ros = RandomOverSampler(random_state=0)   # 分类样本数过采样,自然随机过采样
 # X_resampled, y_resampled = ros.fit_sample(X, y)
