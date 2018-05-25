@@ -47,7 +47,7 @@ ss = StandardScaler()
 X_train = ss.fit_transform(X_train)    # 先拟合数据，然后转化它将其转化为标准形式
 X_test = ss.transform(X_test)          # Perform standardization by centering and scaling（通过找中心和缩放等实现标准化）
 
-# 初始化
+# 初始化, Stochastic Gradient Descent Classifier & Logistic Regression
 lr = LogisticRegression()
 sgdc = SGDClassifier()
 lr.fit(X_train, y_train)  # LR分类器 训练模型
@@ -118,11 +118,19 @@ print(classification_report(y_test, y_predict, target_names=digits.target_names.
 # Naive Bayes
 
 from sklearn.datasets import fetch_20newsgroups
+from sklearn.datasets import load_iris
+
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.preprocessing import StandardScaler
+
 from sklearn.naive_bayes import MultinomialNB
+from sklearn.neighbors import KNeighborsClassifier
+
 from sklearn.metrics import classification_report, precision_score
 from sklearn.metrics import confusion_matrix
+from sklearn.metrics import scorer, accuracy_score
+from sklearn.metrics import classification_report
 
 news = fetch_20newsgroups(subset='all')
 print(len(news.data))
@@ -135,7 +143,7 @@ vec = CountVectorizer()
 X_train = vec.fit_transform(X_train)
 X_test = vec.transform(X_test)
 
-# 初始化
+# 初始化, 主要用于文本的主题分类
 mnb = MultinomialNB()
 print(mnb)
 print(mnb._get_coef)
@@ -156,9 +164,39 @@ confu_matrix = confusion_matrix(y_test, y_predict)
 print(np.array_str(confu_matrix, 100))
 # print(np.array_str(confu_matrix_,100))
 
+# recall：针对原来的样本而言，表示样本中的正例有多少是被预测正确了
+# precision：针对预测结果而言，表示预测为正的样本中有多少是真正的正样本
+
+# 关于混淆矩阵的说明
+# y_test、y_predict为第一、二参数时：则横向为真是值，纵向为预测值
+
+
 precision = precision_score(y_test, y_predict, average='macro')
 print(precision)
 precision = precision_score(y_test, y_predict, average='micro')
 print(precision)
 precision = precision_score(y_test, y_predict, average='weighted')
 print(precision)
+
+
+iris = load_iris()
+# print(iris.data.shape)
+# print(type(iris.data))
+# print(iris.DESCR)
+X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.25, random_state=33)
+
+ss = StandardScaler()
+X_train = ss.fit_transform(X_train)
+X_test = ss.transform(X_test)
+
+knc = KNeighborsClassifier()
+knc.fit(X_train, y_train)
+
+y_predict = knc.predict(X_test)
+
+print('The accuracy of K-Nearest Neighbor Classifier is: ', knc.score(X_test, y_test))
+print('The other accuacy is: ', accuracy_score(y_test, y_predict))
+print(classification_report(y_test, y_predict, target_names=iris.target_names))
+confu_matrix = confusion_matrix(y_test, y_predict)
+print(iris.target_names)
+print(confu_matrix)
