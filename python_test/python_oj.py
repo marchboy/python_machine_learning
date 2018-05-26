@@ -82,7 +82,11 @@ class Solution_0(object):
                 if i != j:
                     return [i, j]
 
-
+    def twoSum_x(self, nums, target):
+        hashed = {}
+        for i in range(len(nums)):
+            if target-nums[i] in hashed: return [hashed[target-nums[i]], i]
+            hashed[nums[i]] = i
 
 class Solution_1(object):
     def twoSum(self, nums, target):
@@ -187,3 +191,127 @@ if __name__ == '__main__':
     s.maxProfit(nums)
 
 
+# ----------------------------------------------
+# 旋转数组
+
+class Solution(object):
+    def rotate(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+        for i in range(k):
+            out = nums.pop()
+            nums.insert(0, out)
+
+        return nums
+
+    def rotate_1(self, nums, k):
+        if k > len(nums):
+            return None
+        nums = nums[-k:] + nums[:-k]
+        return nums
+
+if __name__ == '__main__':
+    nums = [1,2,3,4,5,6,7]
+    s = Solution()
+    s.rotate_1(nums,3)     
+
+
+# -----------------------------------------
+# 只出现一次的数字
+
+class Solution:
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        bak = set()
+        for num in nums:
+            if num in bak:
+                bak.remove(num)
+            else:
+                bak.add(num)
+        return list(bak)[0]
+    def singleNumber_1(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        a = 0
+        for i in nums:
+            # 异或运算
+            a ^= i  
+        return a
+if __name__ == '__main__':
+    nums = [4,1,2,1,2]
+    s = Solution()
+    s.singleNumber_1(nums)  
+
+# ---------------------------------------
+# 加一
+class Solution:
+    def plusOne(self, digits):
+        """
+        :type digits: List[int]
+        :rtype: List[int]
+        """
+        # plusone = digits.pop() + 1
+        # if plusone >= 10:  
+        #     quotient = plusone // 10
+        #     remainder = plusone % 10
+        #     digits.extend([quotient,remainder])
+        # else:
+        #     digits.append(plusone)
+        # return digits
+        func = lambda x:str(x)
+        plusone = int(''.join(map(func, digits))) +1
+
+        # split_ = list(str(plusone))
+        # res = list(map(lambda x: int(x), split_))
+        res = list(map(int, str(plusone)))
+        return res
+
+    def plusOne_1(self, digits):
+        res = 0
+        l = len(digits) -1
+        for i, num in enumerate(digits):
+            res += num * 10 ** (l - i)
+        res = list(map(int, str(res+1)))
+ 
+        return res
+
+if __name__ == '__main__':
+    nums = [1,2,3]
+    s = Solution()
+    s.plusOne_1(nums)  
+
+# -------------------------------------
+# 移动零
+
+class Solution:
+    def moveZeroes(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+        # l = len(nums)
+        # for i in range(l):
+        #     num = nums[i]
+        #     if num == 0:
+        #         nums.remove(num)
+        #         nums.append(num)
+        #         print(nums,'-----')
+        j = 0
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                nums[i], nums[j] = nums[j], nums[i]
+                j += 1
+
+        return nums
+if __name__ == '__main__':
+    nums = [0,0,1]
+    s = Solution()
+    s.moveZeroes(nums)
