@@ -315,3 +315,71 @@ if __name__ == '__main__':
     nums = [0,0,1]
     s = Solution()
     s.moveZeroes(nums)
+
+# -------------------------
+# 反转字符串
+string = 'string'
+string[::-1]
+
+
+# 颠倒数字
+
+class Solution:
+    def reverse(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        flag = 1 if x>= 0 else -1
+
+        n = str(abs(x))[::-1]
+        res = int(n) * flag
+        return res if res.bit_length() < 32 else 0
+
+# 字符串中的第一个唯一字符
+
+class Solution:
+    def firstUniqChar(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+
+        for i, val in enumerate(s):
+
+            if val not in s[i+1:] and val not in s[:i]:
+                return i
+
+            if i+1 == len(s):
+                return -1
+        
+        return -1
+
+    def firstUniqChar_1(self, s):
+        """
+        :type s: str
+        :rtype: int
+        : 元素消除
+        """
+        unique = s
+        while unique:
+            if unique[0] in unique[1::]:
+                unique = unique.replace(unique[0], "")
+            else:
+                return s.find(unique[0])
+        return -1 
+
+
+            
+if __name__ == '__main__':
+    s = Solution()
+    s.firstUniqChar_1('')
+
+
+
+# ------------------------------------
+# 有效的字母异同位
+# all() 函数用于判断给定的可迭代参数 iterable 中的所有元素是否都为 TRUE，如果是返回 True，否则返回 False。
+# 元素除了是 0、空、FALSE 外都算 TRUE。
+# return set(s) == set(t) and all(s.count(i) == t.count(i) for i in set(s))
+
