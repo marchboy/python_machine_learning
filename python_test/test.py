@@ -159,3 +159,72 @@ y_test = [1,2,3,3,3,3]
 y_pred = [1,3,3,2,3,2]
 print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))
+
+
+
+
+# 散沙---二维数组与矩阵操作
+import numpy as np
+
+#-------------二维数组----------------
+arr2d_random  = np.random.rand(10).reshape(5,2)
+arr2d_zeros = np.zeros_like(arr2d_random)
+arr2d_ones = np.ones_like(arr2d_random)
+
+print(arr2d_random, '\n\n', arr2d_zeros, '\n\n' ,arr2d_ones)
+print(np.zeros((5,2)), '\n'*2, np.ones([5,2]), '\n'*2, np.eye(3))
+
+# 使用函数传入下标作为参数，生成二维数组
+def CameronThePrimeMinister(i, j):
+    return (i+1)*(j+1)
+
+print(np.fromfunction(CameronThePrimeMinister, (8,8)))
+
+# 使用广播broadcasting
+x = np.arange(1, 10)
+print(x.reshape(-1, 1), '\n'*2, x, '\n'*2, x.reshape(-1,1) * x)
+
+
+[x, y] = np.ogrid[0:1:6j, 0:1:6j]
+print(np.exp(-x**2 - y**2))
+
+# 使用笛卡儿积，outer关键字
+np.multiply.outer(range(1, 10), range(1, 10))
+
+#-------------矩阵----------------
+print(arr2d_random, '\n'*2, arr2d_random.T)
+cov = np.cov(arr2d_random.T)
+print(cov)
+
+stdiag = np.diag(np.sqrt(np.diag(cov)))
+print(stdiag)
+
+invstdiag = np.array(np.mat(stdiag).I)
+print(invstdiag)
+
+corr = np.mat(stdiag).I * np.mat(cov) * np.mat(stdiag).I
+print(corr)
+
+print(np.corrcoef(arr2d_random.T))
+
+#----------------利用矩阵实现最小二乘法解线性回归（OLS）-------------------
+#
+x = np.random.rand(30).reshape(15, 2)
+y = x[:,0] * 0.7 - x[:,1] * 0.2 + 0.1 + 0.1*np.random.rand(15)
+
+Xcvr = np.mat(np.hstack((np.ones(15).reshape(15,1), x)))
+print(Xcvr)
+
+
+H = Xcvr * (Xcvr.T * Xcvr).I * Xcvr.T
+betahats = np.dot((Xcvr.T * Xcvr).T * Xcvr.T, y)
+
+preds = np.dot(H, y)
+
+print(betahats, '\n'*2, preds)
+
+import statsmodels.formula.api as sm
+model = sm.OLS(y, Xcvr).fit()
+print(model.summary())
+
+
