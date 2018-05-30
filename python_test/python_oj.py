@@ -315,3 +315,93 @@ if __name__ == '__main__':
     nums = [0,0,1]
     s = Solution()
     s.moveZeroes(nums)
+
+def decorated(func):
+    print(1)
+    return func
+
+def main_f():
+    print(2)
+a = decorated(main_f)
+a()
+
+import numpy as np
+sku = np.dtype([('sku_id', np.int32), ('desc', np.str, 50), ('value', np.float)])
+print(sku)
+
+sku2 = np.dtype({'names':['sku_id', 'desc', 'value'], 'formats':['<i4', 'S50', '<f8']})
+
+online_shop = np.array([(1, 'apple', 2.3), (2.1, 3, 5), (3, 'banana', True)], dtype=sku2)
+print(online_shop)
+
+
+np.cov
+
+# --------------------------------------------------
+# 有效的数独
+class Solution:
+    def isValidSudoku(self, board):
+        """
+        :type board: List[List[str]]
+        :rtype: bool
+        """
+        """
+        def isRowColValid(one):
+            num_dict = {}
+            for num in one:
+                if num != '.':
+                    if num not in num_dict:
+                        num_dict[num] = 0
+                    num_dict[num] += 1
+
+            for _, i in num_dict.items():
+                if i > 1:
+                    return False
+            return True
+        """
+        def isRowColValid(one):
+            num_dict = dict().fromkeys(one, 0)
+            for item in one:
+                if item != '.':
+                    num_dict[item] += 1
+                if num_dict[item] > 1:
+                    return False
+            return True
+        
+        for row in board:
+            if not isRowColValid(row):
+                return False
+        
+        boardT = list(zip(*board))
+        for row in boardT:
+            if not isRowColValid(row):
+                return False
+        
+        pos = 0
+        while pos < 9:
+            offset = 0
+            while offset < 9:
+                temprow = board[pos][offset:offset+3]
+                temprow.extend(board[pos+1][offset:offset+3])
+                temprow.extend(board[pos+2][offset:offset+3])
+                print(temprow)
+                if not isRowColValid(temprow):
+                    return False
+                
+                offset += 3
+            pos += 3
+        return True
+
+if __name__ == '__main__':
+    a = [["5","3",".",".","7",".",".",".","."],
+    ["6",".",".","1","9","5",".",".","."],
+    [".","9","8",".",".",".",".","6","."],
+    ["8",".",".",".","6",".",".",".","3"],
+    ["4",".",".","8",".","3",".",".","1"],
+    ["7",".",".",".","2",".",".",".","6"],
+    [".","6",".",".",".",".","2","8","."],
+    [".",".",".","4","1","9",".",".","5"],
+    [".",".",".",".","8",".",".","7","9"]]
+
+    s = Solution()
+    s.isValidSudoku(a)
