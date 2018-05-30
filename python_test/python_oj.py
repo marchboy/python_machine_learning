@@ -316,7 +316,6 @@ if __name__ == '__main__':
     s = Solution()
     s.moveZeroes(nums)
 
-<<<<<<< HEAD
 def decorated(func):
     print(1)
     return func
@@ -406,7 +405,6 @@ if __name__ == '__main__':
 
     s = Solution()
     s.isValidSudoku(a)
-=======
 # -------------------------
 # 反转字符串
 string = 'string'
@@ -474,4 +472,3 @@ if __name__ == '__main__':
 # 元素除了是 0、空、FALSE 外都算 TRUE。
 # return set(s) == set(t) and all(s.count(i) == t.count(i) for i in set(s))
 
->>>>>>> 530a611e40600fbcc6fab10f30679ab70c2c7244
