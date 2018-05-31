@@ -383,3 +383,114 @@ if __name__ == '__main__':
 # 元素除了是 0、空、FALSE 外都算 TRUE。
 # return set(s) == set(t) and all(s.count(i) == t.count(i) for i in set(s))
 
+# string.isalnum()
+# 如果 string 至少有一个字符并且所有字符都是字母或数字则返回 True,否则返回 False
+# string.isalpha() http://www.runoob.com/python/python-strings.html
+
+# 例子：验证回文
+
+
+def isPalindrome(s):
+    """
+    :type s: str
+    :rtype: bool
+    """
+    s = list(filter(str.isalnum, s.lower()))
+    return True if s == s[::-1] else False
+
+class Solution:
+    def myAtoi(self, str):
+        str__ = str.strip().split()
+        if len(str__) >= 1:
+            str_ = str__[0]
+        else:
+            return 0
+        
+        lis = []
+        for i in str_:
+            print("i", i)
+            if i == '-' or i.isdigit() or i == '+':
+                lis.append(i)
+                print(lis)
+
+                if not lis[0].isdigit() and len(lis) < 2:
+                    continue
+                else:
+                    str_ = "".join(lis)
+                    try:
+                        num = int(float(str_))
+                        print(num)
+                        continue
+                    except:
+                        str_ = str_[:-1]
+                        print("---", str_)
+                        break
+
+                    # if str_.isdigit():
+                    #     continue
+                    # else:
+                    #     str_ = str_[:-1]
+                    #     print("---",str_)
+            else:
+                break
+        
+        try:
+            num = int(float(str_))
+        except:
+            return 0
+        if num.bit_length() < 32:
+            return num
+        if num > 0:
+            return 2**31-1
+        if num < 0:
+            return -2**31
+if __name__ == "__main__":
+    _str = "-13+8"
+    ss = Solution()
+    ss.myAtoi(_str)
+
+# 
+class Solution:
+    def myAtoi(self, str):
+        str = str.strip()
+        if not str:
+            return 0
+        sum = 0
+        flag = 1
+        if str[0] == '-':
+            str = str[1:]
+            flag = -1
+        elif str[0] == '+' :
+            str = str[1:]
+        
+        for c in str:
+            if c.isdigit():
+                sum = sum*10 + ord(c) - ord('0') 
+            else:
+                break
+        sum = flag * sum
+        if sum<-2**31:
+            sum = -2**31
+        if sum>2**31-1:
+            sum = 2**31-1
+        return sum
+
+# Permutations 
+class Solution(object):
+    def permute(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        result = [[]]
+        for num in nums:
+            new_result = []
+            for seq in result:
+                print(seq)
+                for i in range(len(seq)+1):
+                    new_result.append(seq[:i]+[num]+seq[i:])
+            result = new_result
+        return result
+
+ss = Solution()
+ss.permute([1,2,3])
