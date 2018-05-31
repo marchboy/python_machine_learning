@@ -185,7 +185,7 @@ x = np.arange(1, 10)
 print(x.reshape(-1, 1), '\n'*2, x, '\n'*2, x.reshape(-1,1) * x)
 
 
-[x, y] = np.ogrid[0:1:6j, 0:1:6j]
+(x, y) = np.ogrid[0:1:6j, 0:1:6j]  # 第三个参数带j即虚数，表示要返回的数组的长度；实数表示步长；mgrid则返回广播后的数组
 print(np.exp(-x**2 - y**2))
 
 # 使用笛卡儿积，outer关键字
