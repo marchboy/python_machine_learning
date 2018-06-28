@@ -30,8 +30,8 @@ class Class_method(object):
 
 if __name__ == "__main__":
     
-    print Class_method.bar
-    Class_method.classmehtod()
+    print(Class_method.bar)
+    Class_method.class_foo
     #main = Main()
     #main_1 = Main()
     #main_2 = Main()
