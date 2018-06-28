@@ -5,8 +5,8 @@
     "tasks": [
         {
             "label": "Run File",
-            // "command": "${config:python.pythonPath} ${file}",
-            "command": "python ${file}",
+            "command": "${config:python.pythonPath} ${file}",
+            // "command": "python ${file}",
             "type": "shell",
             "group": {
                 "kind": "build",

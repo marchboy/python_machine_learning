@@ -228,3 +228,94 @@ model = sm.OLS(y, Xcvr).fit()
 print(model.summary())
 
 
+# PCA 数据降维
+
+import numpy as np
+
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler, scale
+
+# x = np.array([2.5,0.5,2.2,1.9,3.1,2.3,2,1,1.5,1.1])
+# y = np.array([2.4,0.7,2.9,2.2,3,2.7,1.6,1.1,1.6,0.9])
+x = np.array([1, 2, 3])
+y = np.array([4, 5, 6])
+
+
+x_mean = np.mean(x)
+y_mean = np.mean(y)
+
+scaled_x = x - x_mean
+scaled_y = y - y_mean
+# data = np.matrix([[scaled_x[i], scaled_y[i]] for i in range(len(scaled_x))])
+data = np.matrix(list(zip(scaled_x, scaled_y)))
+
+standard = StandardScaler()
+standard = scale()
+data_standard = standard.fit_transform(np.array(list(zip(x,y))))
+
+plt.scatter(scaled_x, scaled_y)
+plt.scatter(x, y)
+plt.show()
+
+cov = np.cov(scaled_x, scaled_y)
+cov = np.cov(data.T)
+
+eig_val, eig_vec = np.linalg.eig(cov)
+eig_pairs = [(np.abs(eig_val[i]), eig_vec[:,i]) for i in range(len(eig_val))]
+eig_pairs.sort(reverse=True)
+
+feature=eig_pairs[0][1]
+new_data_reduced=np.transpose(np.dot(feature,np.transpose(data)))
+print(new_data_reduced)
+
+from sklearn.decomposition import PCA
+pca = PCA(n_components=1)
+data = np.matrix(list(zip(x,y)))
+new_data = pca.fit_transform(data)
+print(new_data)
+print(pca.explained_variance_ratio_, '\n'*2, pca.explained_variance_)
+
+
+
+
+import uuid
+name = 'test_name'
+namespace = 'test_namespace'
+print(uuid.uuid1())
+print(uuid.uuid3(uuid.NAMESPACE_DNS, "myString"))
+print(uuid.uuid4())
+print(uuid.uuid5(uuid.NAMESPACE_DNS, "myString"))
+
+import heapq
+portfolio = [
+    {'name': 'IBM', 'shares': 100, 'price': 91.1},
+    {'name': 'AAPL', 'shares': 50, 'price': 543.22},
+    {'name': 'FB', 'shares': 200, 'price': 21.09},
+    {'name': 'HPQ', 'shares': 35, 'price': 31.75},
+    {'name': 'YHOO', 'shares': 45, 'price': 16.35},
+    {'name': 'ACME', 'shares': 75, 'price': 115.65}
+]
+
+cheap = heapq.nsmallest(3, portfolio, key=lambda s:s['price'])
+expensive = heapq.nlargest(3, portfolio, key=lambda s:s['price'])
+print(cheap, expensive)
+
+
+nums = [1, 8, 2, 23, 7, -4, 18, 23, 42, 37, 2]
+heap = list(nums)
+heapq.heapify(heap)
+print(heapq.heappop(heap))
+print(heapq.heappop(heap))
+
+
+
+from collections import defaultdict
+
+def result():
+    return defaultdict(set)
+
+d = defaultdict(result)
+d['a']['b'].add('100')
+d['a']['b'].add('1400')
+d['a']['c'].add('100')
+

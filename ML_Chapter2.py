@@ -1,3 +1,4 @@
+
 # -*- coding：utf-8 -*-
 
 import pandas as pd
@@ -175,8 +176,8 @@ precision = precision_score(y_test, y_predict, average='macro')
 print(precision)
 precision = precision_score(y_test, y_predict, average='micro')
 print(precision)
-precision = precision_score(y_test, y_predict, average='weighted')
-print(precision)
+
+
 
 
 iris = load_iris()
