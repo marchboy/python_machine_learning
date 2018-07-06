@@ -44,10 +44,59 @@ Kobe.do()
 print('-'*35)
 
 print(isinstance(Curry, AllStar))
-print(isinstance(Curry, Player))
+print(isinstance(Curry, Player))  # 继承
 print("-"*35)
 
 #多态，新增任何一个父类的子类，不必对run()做任何修改，任何依赖Player作为参数的函数或者方法都可以不加任何修改即可正常运行，此为多态
 run(Player("Joe", 70))
 run(Curry)
 run(AllStar("John", 100))
+
+
+
+
+## MVC
+
+class Model():
+    services = {
+        'email':{'number':1000, 'price':2},
+        'sms':{'number':1000, 'price':10},
+        'voice':{'number':1000, 'price':15}
+    }
+
+class View():
+    def list_services(self, services):
+        for svc in services:
+            print(svc, '')
+    def list_price(self,services):
+        for svc in services:
+            print('For', Model.services[svc]['number'],
+                         svc, "Message you pay $",
+                         Model.services[svc]['price']
+            )
+
+class Controller():
+    def __init__(self):
+        self.model = Model()
+        self.view = View()
+    def get_services(self):
+        services = self.model.services.keys()
+        return self.view.list_services(services)
+
+    def get_pricing(self):
+        services = self.model.services.keys()
+        return self.view.list_price(services)
+
+
+class Client():
+    controller = Controller()
+    print("service provided:")
+    controller.get_pricing()
+    print("service for Services:")
+    controller.get_services()
+
+if __name__ == "__main__":
+    client = Client()
+
+    
+
