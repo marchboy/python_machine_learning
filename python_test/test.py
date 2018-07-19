@@ -1,20 +1,8 @@
+#! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 """
-print(pow(2,10))
-
-#month.py
-month = "JanFebMarAprMayJunJulAugSepOctNovDec"
-n = input("请输入月份（1-12）：")
-pos = (int(n) - 1) * 3
-monthAbbrev = month[pos:pos+3]
-print("月份的简写是：" + monthAbbrev + ".")
-
-
-
 ##--maxn.py
-
 #寻找一组数据当中最大者
 def main():
     n = eval(input("How many numbers are there?"))
@@ -46,10 +34,8 @@ names = pd.concat(pieces, ignore_index= True)
 print(len(names))
 
 
-
 # A, B, C = input().split(' ')
 # print("A + B + C = ", int(A) + int(B) + int(C))
-
 
 
 # http://bbs.fishc.com/thread-79821-1-1.html
@@ -58,7 +44,6 @@ print(len(names))
 
 # loc[:,['tip','total_bill']]才能索引列，
 # loc通过行标签索引行数据，即通过index和columns的值进行选取。loc方法有两个参数，按顺序控制行列选取。
-
 # iloc：通过行号选取数据，即通过数据所在的自然行列数为选取数据。iloc方法也有两个参数，按顺序控制行列选取
 # ix:混合索引，同时通过标签和行号选取数据。df.ix[1:3,['b','c']]
 # at/iat：通过标签或行号获取某个数值的具体位置。

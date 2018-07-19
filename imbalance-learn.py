@@ -79,6 +79,7 @@ if __name__ == '__main__':
     clf.fit(X,y)
     plot_decision_function(X, y, clf, ax1)
     ax1.set_title('Linear SVC with y={}'.format(Counter(y)))
+
     pipe = make_pipeline(RandomOverSampler(random_state=0), LinearSVC())
     pipe.fit(X, y)
     plot_decision_function(X, y, pipe, ax2)
