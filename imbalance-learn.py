@@ -99,3 +99,7 @@ if __name__ == '__main__':
 
 # clf = LinearSVC()
 # clf.fit(X_resampled, y_resampled)
+
+
+
+https://blog.csdn.net/ljp1919/article/details/78241809
