@@ -1,0 +1,410 @@
+*/5 * * * *  /usr/sbin/ntpdate 125.88.168.122 125.88.168.117 > /dev/null 2>&1
+0 0 * * * /data/sh/game/rotate_logs.sh >> /tmp/rotate_logs.log
+1 0 * * * /data/sh/backup_config.sh >> /tmp/backup_config.log 
+
+
+#####例行模块名称范例#####
+##例行脚本需严格按照模块范例添加##
+##模块内容注释范例1##
+  #子模块名称范例1
+##模块内容注释范例2##
+  #子模块名称范例2
+
+
+#####日志数据同步模块#####
+##注释需规范说明数据的上游和下游##
+
+  #同步101服务器rsync的jbdatareport_log/中的数据到111服务器的/home/jbdatareport/logs/
+*/30 * * * * /data/sh/rsync/rsync_101.sh >> /tmp/rsync_101.log 2>&1
+
+
+#####xxStrategy例行模块#####
+  #CPS智能优化策略 月初初始化Redis数据
+10 0 1 * * python /home/xxstrategy/cps_payment_opt/cps_detain_prepare.py >> /tmp/cps_detain_prepare.log 2>&1
+  #guild智能优化策略 月初初始化Redis数据
+14 14 4 * * python /home/xxstrategy/guild_payment_opt/guild_detain_prepare.py >> /tmp/guild_detain_prepare.log 2>&1
+  #果盘H5游戏模型训练和自动排序
+20 3 * * * sh /home/xxstrategy/h5_game_ranking/run.sh >> /tmp/h5_game_ranking.log 2>&1
+  #数据中心各网站系统 用户行为分析
+10 4 * * * sh /home/xxstrategy/web_user_analysis/run.sh >> /tmp/web_user_analysis.log 2>&1
+
+
+#####xxMonitor爬虫监控模块#####
+  #xxMonitor数据监控系统 应用市场数据 排行
+10 6 * * * sh /home/xxmonitor/xxspider_rank/run_xxspider_rank.sh >> /tmp/xxspider_rank.log 2>&1
+  #xxMonitor数据监控系统 全国竞品数据 游戏
+10 3 * * * sh /home/xxmonitor/xxspider_game/run_xxspider_game.sh >> /tmp/xxspider_game.log 2>&1
+0 15 * * * sh /home/xxmonitor/xxspider_game/run_xxspider_game.sh >> /tmp/xxspider_game.log 2>&1
+  #xxMonitor数据监控系统 全国竞品数据 资讯 修改运行时间需要同时改setting里max_page的时间区域
+10 5 * * * sh /home/xxmonitor/xxspider_news/run_xxspider_news.sh >> /tmp/xxspider_news.log 2>&1
+0 11 * * * sh /home/xxmonitor/xxspider_news/run_xxspider_news.sh >> /tmp/xxspider_news.log 2>&1
+0 16 * * * sh /home/xxmonitor/xxspider_news/run_xxspider_news.sh >> /tmp/xxspider_news.log 2>&1
+  #xxMonitor数据监控系统 全国竞品数据 礼包
+10 3 * * * sh /home/xxmonitor/xxspider_gift/run_xxspider_gift.sh >> /tmp/xxspider_gift.log 2>&1
+0 11 * * * sh /home/xxmonitor/xxspider_gift/run_xxspider_gift.sh >> /tmp/xxspider_gift.log 2>&1
+0 16 * * * sh /home/xxmonitor/xxspider_gift/run_xxspider_gift.sh >> /tmp/xxspider_gift.log 2>&1
+  #xxMonitor数据监控系统 全国竞品数据 论坛
+10 5 * * * sh /home/xxmonitor/xxspider_forum/run_xxspider_forum.sh >> /tmp/xxspider_forum.log 2>&1
+0 11 * * * sh /home/xxmonitor/xxspider_forum/run_xxspider_forum.sh >> /tmp/xxspider_forum.log 2>&1
+0 16 * * * sh /home/xxmonitor/xxspider_forum/run_xxspider_forum.sh >> /tmp/xxspider_forum.log 2>&1
+  #xxMonitor数据监控系统 手机设备信息爬取
+0 0 26 * * sh /home/xxmonitor/xxspider_device/run_xxspider_device.sh >> /tmp/xxspider_device.log 2>&1
+  #xxMonitor数据监控系统 手机商店信息爬取
+50 2 * * * sh /home/xxmonitor/xxspider_store/run_xxspider_store.sh >> /tmp/xxspider_store.log 2>&1
+
+  #xmodSpider 海外爬虫采集模块
+#10 2 * * * sh /home/xxmonitor/xmodspider/run_xmodspider.sh >> /tmp/xmodspider.log 2>&1
+  
+  #xxMonitor 游戏自动标签模块
+0 0 28 * * sh /home/xxmonitor/auto_label/run_auto_label.sh >> /tmp/auto_label.log 2>&1
+
+
+#####xxStatistics数据分析系统#####
+  #平台系统各模块Excel表导出任务
+35 11 * * * sh /home/xxstatistics/analysis/module_export/run.sh >> /tmp/module_export.log 2>&1
+35 14 * * * sh /home/xxstatistics/analysis/module_export/run.sh >> /tmp/module_export.log 2>&1
+35 17 * * * sh /home/xxstatistics/analysis/module_export/run.sh >> /tmp/module_export.log 2>&1
+
+  #叉叉IPA精灵应用每日新增活跃入MongoDB，读取RPC日志: /home/rpcdatareport/logs/xx_ipaelf_authlog_datareport_YYYYMMDD.log
+20 0 * * * sh /home/xxstatistics/analysis/xxapp/xx_ipaelf_user_new_and_active/run.sh >> /tmp/xx_ipaelf_user_new_and_active.log 2>&1
+  #叉叉IPA精灵应用新增、活跃、留存统计，Base On xx_ipaelf_user_new_and_active/run.sh，依赖例行1点可以跑完
+20 4 * * * sh //home/xxstatistics/analysis/xxapp/xx_ipaelf_retention/run.sh >> /tmp/xx_ipaelf_retention.log 2>&1 
+  #叉叉IPA精灵游戏打包设备统计，Base On xx_ipaelf_user_new_and_active/run.sh，依赖例行1点可以跑完
+40 4 * * * sh /home/xxstatistics/analysis/xxapp/xx_ipaelf_packages/run.sh >> /tmp/xx_ipaelf_packages.log 2>&1 
+
+
+  #BEGIN#---产品相关的商业化统计分析模块---#BEGIN#
+   
+  #果盘APP资源位下载安装转化收入分析
+0 9 * * * sh /home/xxstatistics/commerce/gpapp_down_and_reg_analytics/run.sh >> /tmp/gpapp_down_and_reg_analytics.log
+  #66SDK下载安装转化收入分析
+10 8 * * * sh /home/xxstatistics/commerce/llsdk_down_and_reg_analytics/llsdk_down_and_reg_analytics.sh >> /tmp/llsdk_down_and_reg_analytics.log 2>&1
+
+##周报自动生成##
+  #自有业务周报
+20 8 * * 1 sh /home/xxstatistics/commerce/data_weekly_report/self_weekly_report.sh >> /tmp/self_weekly_report.log 2>&1
+  #代理发行周报
+10 10 * * 1 sh /home/xxstatistics/commerce/data_weekly_report/proxy_weekly_report.sh >> /tmp/proxy_weekly_report.log 2>&1
+  #公会业务周报
+10 11 * * 1 sh /home/xxstatistics/commerce/data_weekly_report/guild_weekly_report.sh >> /tmp/guild_weekly_report.log 2>&1
+  #66产品周报
+10 9 * * 1 sh /home/xxstatistics/commerce/data_weekly_report/ll_weekly_report.sh >> /tmp/ll_weekly_report.log 2>&1
+  #果盘产品周报
+30 8 * * 1 sh /home/xxstatistics/commerce/data_weekly_report/gp_weekly_report.sh >> /tmp/gp_weekly_report.log 2>&1
+
+##日报自动生成##
+  #66产品日报
+10 9 * * 1-5 sh /home/xxstatistics/commerce/data_daily_report/ll_daily_report.sh >> /tmp/ll_daily_report.log 2>&1
+  #代理发行日报
+50 8 * * 1-5 sh /home/xxstatistics/commerce/data_daily_report/proxy_daily_report.sh >> /tmp/proxy_daily_report.log 2>&1  
+  #果盘产品日报
+30 8 * * 1-5 sh /home/xxstatistics/commerce/data_daily_report/gp_daily_report.sh >> /tmp/gp_daily_report.log 2>&1
+  #日报自动发送
+0 10 * * 1-5 sh /home/xxstatistics/commerce/data_daily_report/sendmail.sh >> /tmp/sendmail.log 2>&1
+
+  #果盘SDK游戏用户渠道商业数据统计分析 实时计算
+0 1-23 * * * sh /home/xxstatistics/commerce/gpsdk_game_income_bi_realtime/gpsdk_game_income_bi_realtime.sh >> /tmp/gpsdk_game_income_bi_realtime.log 2>&1
+
+  #下载安装激活设备以及账号注册数据分析
+0 5 * * * sh /home/xxstatistics/commerce/gpsdk_down_and_reg_analytics/gpsdk_down_and_reg_analytics.sh >> /tmp/gpsdk_down_and_reg_analytics.log 2>&1
+
+  #果盘SDK用户渠道账号登录分析 公会来源UID洗刷刷
+0 7 * * * sh /home/xxstatistics/commerce/gpsdk_channel_account_login_analytics/create_uid_cid_set_daily.sh  >> /tmp/xishuashua_uid_cid_set_daily.log
+40 7 * * * sh /home/xxstatistics/commerce/gpsdk_channel_account_login_analytics/calculate.sh >> /tmp/gpsdk_channel_account_login_analytics.log
+  #果盘SDK账号新增、活跃、留存分析
+20 5 * * * sh /home/xxstatistics/commerce/gpsdk_new_and_active_uids/gpsdk_new_and_active_uids.sh >> /tmp/gpsdk_new_and_active_uids.log 2>&1
+  #果盘SDK游戏用户渠道商业数据统计分析
+20 7 * * * sh /home/xxstatistics/commerce/gpsdk_game_income_bi/gpsdk_game_income_bi.sh >> /tmp/gpsdk_game_income_bi.log 2>&1
+
+  #果盘SDK CPS和公会渠道流水数据优化监控 将日志数据处理并存储到数据库
+20 9 * * * sh /home/xxstatistics/commerce/gpsdk_cps_guild_strategy/run.sh >> /tmp/gpsdk_cps_guild_strategy.log 2>&1
+
+  #果盘SDK uuid对应的第一个cid基础库构建（依赖gpsdk每日新增活跃的基础库,五点才跑完,不能早于五点跑) base on GP_A, gufc
+40 6 * * * sh /home/xxstatistics/analysis/gpsdk/gpsdk_uuid_first_cid/run.sh >> /tmp/gpsdk_uuid_first_cid.log 2>&1
+  #果盘SDK 流失用户统计 uuid,appid维度 base on GP_A
+0 9 * * * sh /home/xxstatistics/analysis/gpsdk/gpsdk_attrition/run_gpsdk_uuid_appid_attrition.sh >> /tmp/run_gpsdk_uuid_appid_attrition.log 2>&1
+  #果盘SDK 流失用户统计 uuid,cid维度 base on GP_A and gufc
+50 7 * * * sh /home/xxstatistics/analysis/gpsdk/gpsdk_attrition/run_gpsdk_uuid_cid_attrition.sh >> /tmp/run_gpsdk_uuid_cid_attrition.log 2>&1
+  #果盘SDK 流失用户统计 uid,appid维度的新增活跃流失 base on gpsdk_new_and_active_uids,gamesdk_uin_gather_into_mongo                 
+30 8 * * * sh /home/xxstatistics/analysis/gpsdk/gpsdk_attrition/run_gpsdk_uid_appid_new_and_active_attrition.sh  >> /tmp/run_gpsdk_uid_appid_new_and_active_attrition.log 2>&1
+  #果盘SDK 流失用户统计 uid,appid,isself维度的历史流失 base on gpsdk_new_and_active_uids,gamesdk_uin_gather_into_mongo                 
+0 9 * * * sh /home/xxstatistics/analysis/gpsdk/gpsdk_attrition/run_gpsdk_uid_appid_isself_history_attrition.sh  >> /tmp/run_gpsdk_uid_appid_isself_history_attrition.log 2>&1
+  #果盘SDK 流失用户统计 uid,cid维度 base on gpsdk_new_and_active_uids                  
+50 8 * * * sh /home/xxstatistics/analysis/gpsdk/gpsdk_attrition/run_gpsdk_uid_cid_attrition.sh  >> /tmp/run_gpsdk_uid_cid_attrition.log 2>&1
+
+  #转接SDK游戏用户留存实施筛选基础表 transfersdk_personal_retention base on gpsdk_third_transfer_a 
+0 5 * * * sh /home/xxstatistics/commerce/transfersdk_new_and_active_uids/run_transfersdk_personal_retention_uid.sh >> /tmp/transfersdk_personal_retention_uid.log 2>&1
+  #转接SDK游戏用户活跃实时筛选基础表 transfersdk_personal_active base on transfersdk_personal_retention
+30 5 * * * sh /home/xxstatistics/commerce/transfersdk_new_and_active_uids/run_transfersdk_personal_active_uid.sh     >> /tmp/transfersdk_personal_active_uid.log    2>&1
+  #转接SDK游戏离线统计 新增活跃留存作页面展示 base on gpsdk_third_transfer_a 
+10 5 * * * sh /home/xxstatistics/commerce/transfersdk_new_and_active_uids/run_transfersdk_retention.sh  >>  /tmp/transfersdk_retention.log   2>&1
+  #转接SDK收入分析基础库 base on gpsdk_third_transfer_a
+0 6 * * * sh /home/xxstatistics/commerce/transfersdk_game_income_bi/run.sh  >> /tmp/transfersdk_game_income_bi.log   2>&1
+
+  #收入分析-新增渠道监控 统计每天新增渠道N日内收入情况
+20 6 * * * sh /home/xxstatistics/commerce/commerce_monitor_channel/run.sh  >> /tmp/commerce_monitor_channel.log   2>&1
+
+  #发行游戏商业分析 
+5 0 * * * sh /home/xxstatistics/commerce/publish_game_income_bi/publish_game_income_bi.sh >>  /tmp/publish_game_income_bi.log 2>&1
+5 0 * * * sh /home/xxstatistics/commerce/publish_game_income_bi/publish_game_partner_income_bi.sh >>  /tmp/publish_game_partner_income_bi.log 2>&1
+  #发行游戏商业分析-实时计算
+*/5 * * * * sh /home/xxstatistics/commerce/publish_game_income_bi/publish_game_income_bi_realtime.sh >>  /tmp/publish_game_income_bi_realtime.log 2>&1
+*/5 * * * * sh /home/xxstatistics/commerce/publish_game_income_bi/publish_game_partner_income_bi_realtime.sh >>  /tmp/publish_game_partner_income_bi_realtime.log 2>&1
+
+  #66SDK账号新增、活跃、留存分析 llsdk_new_and_active_uids
+20 3 * * * sh /home/xxstatistics/commerce/llsdk_new_and_active_uids/llsdk_new_and_active_uids.sh >> /tmp/llsdk_new_and_active_uids.log 2>&1
+  #66SDK uuid对应的第一个cid基础库构建（依赖llsdk每日新增活跃的基础库,四点才跑完,不能早于四点跑) base on LL_A, gufc
+40 5 * * * sh /home/xxstatistics/analysis/llsdk/llsdk_uuid_first_cid/run.sh >> /tmp/llsdk_uuid_first_cid.log 2>&1
+  #66SDK 流失用户统计 uuid,appid维度 base on LL_A
+0 9 * * * sh /home/xxstatistics/analysis/llsdk/llsdk_attrition/run_llsdk_uuid_appid_attrition.sh >> /tmp/run_llsdk_uuid_appid_attrition.log 2>&1
+  #66SDK 流失用户统计 uuid,cid维度 base on LL_A and gufc
+50 6 * * * sh /home/xxstatistics/analysis/llsdk/llsdk_attrition/run_llsdk_uuid_cid_attrition.sh >> /tmp/run_llsdk_uuid_cid_attrition.log 2>&1
+  #66SDK 流失用户统计 uid,appid维度的新增活跃流失 base on llsdk_new_and_active_uids,gamesdk_uin_gather_into_mongo                 
+30 8 * * * sh /home/xxstatistics/analysis/llsdk/llsdk_attrition/run_llsdk_uid_appid_new_and_active_attrition.sh  >> /tmp/run_llsdk_uid_appid_new_and_active_attrition.log 2>&1
+  #66SDK 流失用户统计 uid,appid,isself维度的历史流失 base on llsdk_new_and_active_uids,gamesdk_uin_gather_into_mongo                 
+0 9 * * * sh /home/xxstatistics/analysis/llsdk/llsdk_attrition/run_llsdk_uid_appid_isself_history_attrition.sh  >> /tmp/run_llsdk_uid_appid_isself_history_attrition.log 2>&1
+  #66SDK 流失用户统计 uid,cid维度 base on llsdk_new_and_active_uids                  
+50 8 * * * sh /home/xxstatistics/analysis/llsdk/llsdk_attrition/run_llsdk_uid_cid_attrition.sh  >> /tmp/run_llsdk_uid_cid_attrition.log 2>&1
+
+  #66SDK游戏用户渠道商业数据统计分析
+40 7 * * * sh /home/xxstatistics/commerce/llsdk_game_income_bi/llsdk_game_income_bi.sh >> /tmp/llsdk_game_income_bi.log 2>&1
+  #66SDK 用户生命周期价值LTV
+30 7 * * * sh /home/xxstatistics/analysis/llsdk/llsdk_user_ltv/run_llsdk_user_ltv.sh >> /tmp/llsdk_user_ltv.log 2>&1
+
+  #llapp 资源位下载转化分析
+20 3 * * * sh /home/xxstatistics/commerce/llapp_down_and_reg_analytics/run.sh >> /tmp/llapp_down_and_reg_analytics.log 2>&1
+  
+  #66SDK游戏用户渠道商业数据统计分析 实时计算
+0 1-23 * * * sh /home/xxstatistics/commerce/llsdk_game_income_bi_realtime/llsdk_game_income_bi_realtime.sh >> /tmp/llsdk_game_income_bi_realtime.log 2>&1
+
+  #END#---产品相关的商业化统计分析模块---#END#
+
+
+  #gpapp 推广用户注册、充值、消费数据统计
+*/10 * * * * sh /home/xxstatistics/analysis/gpapp/gpapp_channel_uin_payment/run_gpapp_channel.sh >> /tmp/gpapp_channel_uin_payment.log 2>&1
+  #gpapp 游戏排序基础数据 base on 101服务器上每天6点执行的例行脚本gpsdk_retention.py运行结束
+30 5 * * * sh /home/xxstatistics/analysis/gpapp/gpapp_game_sort/package_history_download.sh >>  /tmp/package_history_download.log 2>&1 
+20 7 * * * sh /home/xxstatistics/analysis/gpapp/gpapp_game_sort/gpapp_game_sort.sh >> /tmp/gpapp_game_sort.log 2>&1 
+
+  #果盘H5游戏 每日新增留存入MongoDB gp_h5_a
+0 1 * * * sh /home/xxstatistics/analysis/gpapp_h5/gpapp_h5_user_new_and_active/run.sh >> /tmp/gpapp_h5_user_new_and_active.log 2>&1  
+  #果盘H5游戏 每日新增、活跃、点击、留存率统计 base on gp_h5_a
+0 2 * * * sh /home/xxstatistics/analysis/gpapp_h5/gpapp_h5_retention/run.sh >> /tmp/gpapp_h5_retention.log 2>&1
+  #果盘H5游戏,游戏排序的基础信息表 gp_h5_baseinfo base on gp_h5_a
+0 3 * * * sh /home/xxstatistics/analysis/gpapp_h5/gpapp_h5_gamesort/run_baseinfo.sh >> /tmp/gpapp_h5_gamesort_baseinfo.log 2>&1
+  #果盘H5游戏,游戏排序的各榜单排名 base on gp_h5_baseinfo
+10 3 * * * sh /home/xxstatistics/analysis/gpapp_h5/gpapp_h5_gamesort/run_rank.sh >> /tmp/gpapp_h5_gamesort_rank.log 2>&1
+
+  #果盘SDK第三方转接 每日新增活跃入MongoDB gpsdk_third_transfer_a
+10 0 * * * sh /home/xxstatistics/analysis/gpsdk_third_transfer/gpsdk_third_transfer_user_new_and_active/run.sh >> /tmp/gpsdk_third_transfer_user_new_and_active.log 2>&1  
+  #果盘SDK第三方转接 每日新增、活跃、点击、留存率统计 base on gpsdk_third_transfer_a
+40 0 * * * sh /home/xxstatistics/analysis/gpsdk_third_transfer/gpsdk_third_transfer_retention/run.sh >> /tmp/gpsdk_third_transfer_retention.log 2>&1
+  #果盘SDK第三方转接 每日新增、活跃、点击、留存率实时统计 base on gpsdk_third_transfer_a 1-23点
+0 1-23 * * * sh /home/xxstatistics/analysis/gpsdk_third_transfer/gpsdk_third_transfer_retention_realtime/run_realtime.sh >> /tmp/gpsdk_third_transfer_retention_realtime.log 2>&1
+  #果盘SDK第三方转接 每日新增、活跃、点击、留存率实时统计 base on gpsdk_third_transfer_a 0点
+5 0 * * * sh /home/xxstatistics/analysis/gpsdk_third_transfer/gpsdk_third_transfer_retention_realtime/run_wholeday.sh >> /tmp/gpsdk_third_transfer_retention_realtime.log 2>&1
+
+  #果盘游戏 用户生命周期价值分析
+0 2 * * * sh /home/xxstatistics/analysis/gpapp/gpapp_user_ltv/run_gpapp_user_ltv.sh >> /tmp/gpapp_user_ltv.log 2>&1
+  #果盘游戏 用户生命周期分析 依赖MongoDB中的gpsdknewusers和gpsdkactiveusers数据
+30 8 * * * sh /home/xxstatistics/analysis/gpapp/gpapp_user_lt/run_gpapp_user_lt.sh >> /tmp/gpapp_user_lt.log 2>&1
+
+  #流量分析 工具激活设备分析 
+10 7 * * * sh /home/xxstatistics/analysis/xxactivetool/xxactivetool_device_analysis/run.sh >> /tmp/xxactivetool_device_analysis.log 2>&1
+  #脚本分析 目标设备留存分析 依赖MongoDB中的xxappactiveusers数据  
+20 7 * * * sh /home/xxstatistics/analysis/xxscripts/xxscripts_retention/run.sh >> /tmp/xxscripts_retention.log 2>&1
+
+
+#####脚本平台数据分析挖掘模块#####
+  #叉叉脚本平台 脚本数据统计
+15 1 * * * sh /home/xxstatistics/pbparser/xx_scripts_statistics/xxstatistic_scripts_payment.sh >> /tmp/xxstatistic_scripts_payment.log 2>&1
+15 2 * * * sh /home/xxstatistics/pbparser/xx_scripts_statistics/xxstatistic_scripts_remain.sh >> /tmp/xxstatistic_scripts_remain.log 2>&1
+  #叉叉脚本平台 脚本日志合并
+0 6 * * * sh /home/xxstatistics/userfigure/analysis/script_log_merge/run_script_log_merge.sh >> /tmp/script_log_merge.log 2>&1
+  #叉叉脚本平台 脚本数据统计 依赖每天6点的脚本日志合并脚本
+30 8 * * * sh /home/xxstatistics/userfigure/analysis/script_analysis/run_script_analysis.sh >> /tmp/script_analysis.log 2>&1
+  #叉叉脚本平台 新增、泛流失、净流失、留存、转化、用户行为统计分析 base on 果盘用户画像数据 依赖每天6点的脚本日志合并脚本
+0 12 * * * sh /home/xxstatistics/userfigure/analysis/jb_analysis/run_jb_analysis.sh >> /tmp/jb_analysis.log 2>&1
+
+
+#####用户画像分析挖掘模块#####
+  #果盘SDK和66SDK 用户注册信息数据同步 从113服务器的MySQL果盘GPUser库中gamesdk_uin*系列数据表拉取同步数据到101服务器的MongoDB数据gpuserfigure中存放,gamesdk_uin_gather_into_mongo
+0 1 * * * sh /home/xxstatistics/userfigure/analysis/gamesdk_uin_gather_into_mongo/run.sh >> /tmp/gamesdk_uin_gather_into_mongo.log
+  
+  #果盘SDK 账号登录数据统计分析
+0 2 * * * sh /home/xxstatistics/userfigure/analysis/uid_login/gpsdk_uid_login.sh >> /tmp/gpsdk_uid_login.log 2>&1
+
+  #果盘SDK 用户渠道商业数据统计分析
+#30 9 * * * sh /home/xxstatistics/userfigure/analysis/gp_game_channel_bi/gp_game_channel_bi.sh >>  /tmp/gp_game_channel_bi.log 2>&1
+0 12 * * * sh /home/xxstatistics/userfigure/analysis/gpsdk_channel_bi/run_gpsdk_channel_bi.sh >> /tmp/gpsdk_channel_bi.log 2>&1
+
+  #用户画像 创建果盘用户画像基础库
+15 9 * * * sh /home/xxstatistics/userfigure/gp/gp_create_user_figure.sh >> /tmp/gp_create_user_figure.log 2>&1
+
+  #用户画像 用户UUID信息累积信息入库MongoDB数据
+20 6 * * * sh /home/xxstatistics/userfigure/etl/userfigure_uuid_info/userfigure_uuid_info.sh >> /tmp/userfigure_uuid_info.log 2>&1
+  #用户画像 累计表例行入库
+30 6 * * * sh /home/xxstatistics/userfigure/etl/userfigure_event_cumm/userfigure_event_cumm.sh >> /tmp/userfigure_event_cumm.log 2>&1
+
+  #用户画像 产品日志解析入库
+30 3 * * * sh /home/xxstatistics/userfigure/etl/userfigure_product_create/userfigure_product_create.sh >> /tmp/userfigure_product_create.log 2>&1
+
+  #用户画像 建立关联UID和关联UUID的表
+#0 7 * * * sh /home/xxstatistics/userfigure/analysis/uid_uuid_mapping_new/uid_uuid_mapping_new.sh >> /tmp/uid_uuid_mapping_new.log 2>&1
+  #用户画像 果盘游戏用户相关UID base on 101服务器上的例行脚本 用户UID和设备UUID映射表入库
+#0 5 * * * sh /home/xxstatistics/userfigure/analysis/relevant_uid/relevant_uid.sh >> /tmp/relevant_uid.log 2>&1
+  #用户画像 建立关联UID和关联UUID的表
+0 7 * * * sh /home/xxstatistics/userfigure/etl/userfigure_uid_uuid_mapping/userfigure_uid_uuid_mapping.sh >> /tmp/userfigure_uid_uuid_mapping.log 2>&1
+
+  #用户画像 生成baseline_timeline数据集
+5 14 * * * sh /home/xxstatistics/userfigure/baseline/baseline_timeline/script/run.sh >> /tmp/baseline_timeline.log 2>&1
+  #用户画像 用户设备流失预测模型
+5 15 * * * sh /home/xxstrategy/user_loss_prediction/run.sh >> /tmp/gp_user_loss_predict.log 2>&1 
+
+
+#####Finance数据分析管理系统#####
+  #通用数据库ID-内容Content监控
+7 * * * * /home/xxfinancedmp/inspection/id_content/run.sh >> /tmp/idcontent_log 2>&1
+
+  #财务系统一键重跑
+0 8-22/1 * * * sh /home/xxfinancedmp/script/rerun_finance_rebate/run.sh >> /tmp/rerun_finance_rebate.log 2>&1
+  #财务系统差异核对
+10 8-22/1 * * * sh  /home/xxfinancedmp/script/auto_check_diff/run.sh >> /tmp/check_diff.log 2>&1
+  #CP特殊分成设置模块 和 游戏联运合同设置模块 差异核对
+0 8-22/1 * * * sh /home/xxfinancedmp/script/contract_parse_check/run_contract_parse_check.sh >> /tmp/contract_parse_check.log 2>&1  
+  #各业务板块流水KPI监控
+10 6 * * * sh /home/xxfinancedmp/script/flamingo_kpi_monitor/financedmp_flow_channel_kpi.sh >> /tmp/financedmp_flow_channel_kpi.log 2>&1
+  #公会业务返利点位数据同步
+15 0 * * * sh /home/xxfinancedmp/script/guild_prop_sync/run_guild_prop_sync.sh >> /tmp/guild_prop_sync.log 2>&1
+  #果币&公会果币卡余额模型截面数据
+0 0 * * * sh /home/xxfinancedmp/script/coin_balance_monitor/coin_balance_monitor.sh >> /tmp/coin_balance_monitor.log 2>&1
+  #渠道关联数据例行入库
+*/30 * * * * sh /home/xxfinancedmp/script/channel_id_relation/finance_channel_relation.sh >> /tmp/finance_channel_relation.log 2>&1
+  #TODO
+
+
+#####Flamingo游戏数据分析系统#####
+##游戏服务器信息##
+  #游戏服务器信息汇总更新-日报周报模块
+35 * * * * sh /home/xxgamedmp/script/server/run_gamedmp_platform_server_channel_for_all.sh >> /tmp/gamedmp_server_info.log 2>&1
+
+##系统接入游戏-挂机吧兄弟-国内##
+  #渠道筛选数据同步
+0 0 * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_platform_server_channel.sh >> /tmp/gamedmp_afk_plat_server_channel.log 2>&1
+  #数据转换存储
+*/30 * * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_daily_merge.sh >> /tmp/gamedmp_afk_daily_merge.log 2>&1
+  #模块-在线分析-实时在线
+*/10 * * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_online_realtime.sh >> /tmp/gamedmp_afk_online_realtime.log 2>&1
+  #模块-数据统计-留存付费分析
+10 2 * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_retention_payment.sh >> /tmp/gamedmp_afk_retention_payment.log 2>&1
+  #模块-虚拟消费-消费点统计
+10 0 * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_reward_cost_related.sh >> /tmp/gamedmp_afk_reward_cost_related.log 2>&1
+   #模块-等级分析-等级分布
+10 4 * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_level.sh >> /tmp/gamedmp_afk_level.log 2>&1
+0 */3 * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_level.sh >> /tmp/gamedmp_afk_level.log 2>&1
+
+##系统接入游戏-挂机吧兄弟-海外##
+  #渠道筛选数据同步
+0 0 * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_platform_server_channel_oversea.sh >> /tmp/gamedmp_afk_plat_server_channel_oversea.log 2>&1
+  #数据转换存储
+*/30 * * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_daily_merge_oversea.sh >> /tmp/gamedmp_afk_daily_merge_oversea.log 2>&1
+  #模块-在线分析-实时在线
+*/10 * * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_online_realtime_oversea.sh >> /tmp/gamedmp_afk_online_realtime_oversea.log 2>&1
+  #模块-数据统计-留存付费分析
+20 2 * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_retention_payment_oversea.sh >> /tmp/gamedmp_afk_retention_payment_oversea.log 2>&1
+  #模块-虚拟消费-消费点统计
+20 0 * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_reward_cost_related_oversea.sh >> /tmp/gamedmp_afk_reward_cost_related_oversea.log 2>&1
+20 9 * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_reward_cost_related_oversea2.sh >> /tmp/gamedmp_afk_reward_cost_related_oversea.log 2>&1
+  #模块-等级分析-等级分布
+20 4 * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_level_oversea.sh >> /tmp/gamedmp_afk_level_oversea.log 2>&1
+#*/30 * * * * sh /home/xxgamedmp/script/afk/run_gamedmp_afk_level_oversea.sh >> /tmp/gamedmp_afk_level_oversea.log 2>&1
+
+##系统接入游戏-萌兽不要停-海外##
+  #渠道筛选数据同步
+0 0 * * * sh /home/xxgamedmp/script/mt/run_gamedmp_mt_platform_server_channel_oversea.sh >> /tmp/gamedmp_mt_plat_server_channel_oversea.log 2>&1
+  #数据转换存储
+*/30 * * * * sh /home/xxgamedmp/script/mt/run_gamedmp_mt_daily_merge_oversea.sh >> /tmp/gamedmp_mt_daily_merge_oversea.log 2>&1
+  #模块-在线分析-实时在线
+*/10 * * * * sh /home/xxgamedmp/script/mt/run_gamedmp_mt_online_realtime_oversea.sh >> /tmp/gamedmp_mt_online_realtime_oversea.log 2>&1
+  #模块-数据统计-留存付费分析
+30 2 * * * sh /home/xxgamedmp/script/mt/run_gamedmp_mt_retention_payment_oversea.sh >> /tmp/gamedmp_mt_retention_payment_oversea.log 2>&1
+  #模块-虚拟消费-消费点统计
+30 0 * * * sh /home/xxgamedmp/script/mt/run_gamedmp_mt_reward_cost_related_oversea.sh >> /tmp/gamedmp_mt_reward_cost_related_oversea.log 2>&1
+  #模块-等级分析-等级分布
+30 4 * * * sh /home/xxgamedmp/script/mt/run_gamedmp_mt_level_distribution_oversea.sh >> /tmp/gamedmp_mt_level_distribution_oversea.log 2>&1
+#*/30 * * * * sh /home/xxgamedmp/script/mt/run_gamedmp_mt_level_distribution_oversea.sh >> /tmp/gamedmp_mt_level_distribution_oversea.log 2>&1
+
+##系统接入游戏-欢乐送-国内##
+  #渠道筛选数据同步
+0 0 * * * sh /home/xxgamedmp/script/hls/run_gamedmp_hls_platform_server_channel.sh >> /tmp/gamedmp_hls_plat_server_channel.log 2>&1
+  #数据转换存储
+*/30 * * * * sh /home/xxgamedmp/script/hls/run_gamedmp_hls_daily_merge.sh >> /tmp/gamedmp_hls_daily_merge.log 2>&1
+  #模块-在线分析-实时在线
+*/10 * * * * sh /home/xxgamedmp/script/hls/run_gamedmp_hls_online_realtime.sh >> /tmp/gamedmp_hls_online_realtime.log 2>&1
+  #模块-数据统计-留存付费分析
+0 3 * * * sh /home/xxgamedmp/script/hls/run_gamedmp_hls_retention_payment.sh >> /tmp/gamedmp_hls_retention_payment.log 2>&1
+  #模块-虚拟消费-消费点统计
+0 0 * * * sh /home/xxgamedmp/script/hls/run_gamedmp_hls_reward_cost.sh >> /tmp/gamedmp_hls_reward_cost.log 2>&1
+  #模块-等级分布-等级分布
+30 3 * * * sh /home/xxgamedmp/script/hls/run_gamedmp_hls_level_distribution.sh >> /tmp/gamedmp_hls_user_level.log 2>&1
+0 */3 * * * sh /home/xxgamedmp/script/hls/run_gamedmp_hls_level_distribution.sh >> /tmp/gamedmp_hls_user_level.log 2>&1
+
+##系统接入游戏-荣耀崛起-国内##
+  #渠道筛选数据同步
+0 0 * * * sh /home/xxgamedmp/script/honor/run_gamedmp_honor_platform_server_channel.sh >> /tmp/gamedmp_honor_plat_server_channel.log 2>&1
+  #数据转换存储
+*/30 * * * * sh /home/xxgamedmp/script/honor/run_gamedmp_honor_daily_merge.sh >> /tmp/gamedmp_honor_daily_merge.log 2>&1
+  #模块-在线分析-实时在线
+*/10 * * * * sh /home/xxgamedmp/script/honor/run_gamedmp_honor_online_realtime.sh >> /tmp/gamedmp_honor_online_realtime.log 2>&1
+  #模块-数据统计-留存付费分析
+10 3 * * * sh /home/xxgamedmp/script/honor/run_gamedmp_honor_retention_payment.sh >> /tmp/gamedmp_honor_retention_payment.log 2>&1
+  #模块-虚拟消费-消费点统计
+0 0 * * * sh /home/xxgamedmp/script/honor/run_gamedmp_honor_reward_cost.sh >> /tmp/gamedmp_honor_reward_cost.log 2>&1
+  #模块-等级分布-等级分布
+30 3 * * * sh /home/xxgamedmp/script/honor/run_gamedmp_honor_level_distribution.sh >> /tmp/gamedmp_honor_user_level.log 2>&1
+0 */3 * * * sh /home/xxgamedmp/script/honor/run_gamedmp_honor_level_distribution.sh >> /tmp/gamedmp_honor_user_level.log 2>&1
+
+##系统接入游戏-萌兽不要停-国内##
+  #渠道筛选数据同步 
+0 0 * * * sh /home/xxgamedmp/script/mt/run_gamedmp_mt_platform_server_channel.sh >> /tmp/gamedmp_mt_plat_server_channel.log 2>&1
+  #数据转换存储
+*/30 * * * * sh /home/xxgamedmp/script/mt/run_gamedmp_mt_daily_merge.sh >> /tmp/gamedmp_mt_daily_merge.log 2>&1
+  #模块-在线分析-实时在线
+*/10 * * * * sh /home/xxgamedmp/script/mt/run_gamedmp_mt_online_realtime.sh >> /tmp/gamedmp_mt_online_realtime.log 2>&1
+  #模块-数据统计-留存付费分析
+0 3 * * * sh /home/xxgamedmp/script/mt/run_gamedmp_mt_retention_payment.sh >> /tmp/gamedmp_mt_retention_payment.log 2>&1
+  #模块-虚拟消费-消费点统计
+0 0 * * *  sh /home/xxgamedmp/script/mt/run_gamedmp_mt_reward_cost.sh >> /tmp/gamedmp_mt_reward_cost.log 2>&1
+  #模块-等级分布-等级分析
+0 */3  * * * sh /home/xxgamedmp/script/mt/run_gamedmp_mt_level_distribution.sh >> /tmp/gamedmp_mt_user_level.log 2>&1
+
+##系统接入游戏-口袋金手指-H5##
+  #渠道筛选数据同步
+0 0 * * * sh /home/xxgamedmp/script/pkm/run_gamedmp_pkm_platform_server_channel.sh >> /tmp/gamedmp_pkm_plat_server_channel.log 2>&1
+  #数据转换存储
+*/30 * * * * sh /home/xxgamedmp/script/pkm/run_gamedmp_pkm_daily_merge.sh >> /tmp/gamedmp_pkm_daily_merge.log 2>&1
+  #模块-在线分析模块-实时在线
+*/10 * * * * sh /home/xxgamedmp/script/pkm/run_gamedmp_pkm_online_realtime.sh >> /tmp/gamedmp_pkm_online_realtime.log 2>&1
+  #模块-数据统计-留存付费分析
+0 3 * * * sh /home/xxgamedmp/script/pkm/run_gamedmp_pkm_retention_payment.sh >> /tmp/gamedmp_pkm_retention_payment.log 2>&1
+  #模块-虚拟消费-消费点统计
+0 0 * * * sh /home/xxgamedmp/script/pkm/run_gamedmp_pkm_reward_cost.sh >> /tmp/gamedmp_pkm_reward_cost.log 2>&1
+  #模块-等级分布-等级分析
+0 */3  * * * sh /home/xxgamedmp/script/pkm/run_gamedmp_pkm_level_distribution.sh >> /tmp/gamedmp_pkm_user_level.log 2>&1
+  #模块-数据统计-游戏时长流失分布、登录频率分布、等级付费分析
+0 0 * * * sh /home/xxgamedmp/script/pkm/run_gamedmp_pkm_daily_statistics.sh >> /tmp/gamedmp_pkm_daily_statistics.log 2>&1
+
+
+#####数据文件备份模块#####
+  #备份服务器Crontab的配置内容
+59 23 * * * sh /home/xxstatistics/inspection/routine_backup/crontab_backup.sh >> /tmp/crontab_backup.log 2>&1
+  #备份财务系统部署文件夹
+0 17 * * * sh /home/xxfinancedmp/backup/copy_to_111_backup.sh >> /tmp/xxfinancedmp_backup.log 2>&1
+
+
+#####数据文件备份模块#####
+  #备份服务器Crontab的配置内容
+59 23 * * * sh /home/xxstatistics/inspection/routine_backup/crontab_backup.sh >> /tmp/crontab_backup.log 2>&1
+  #备份财务系统部署文件夹
+0 17 * * * sh /home/xxfinancedmp/backup/copy_to_111_backup.sh >> /tmp/xxfinancedmp_backup.log 2>&1
+
