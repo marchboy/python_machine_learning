@@ -3,6 +3,9 @@
 
 
 import jieba
+import jieba.analyse
+from io import open
+
 
 class WordAnalysis(object):
     def __init__(self, filepath, filename):
@@ -25,7 +28,15 @@ class WordAnalysis(object):
         for word in seg_list:
             yield word
     
+    def fetch_keywords_tfidf(self, sentence):
+        "TF_IDF to fetch keywords"
+        keywords = jieba.analyse.extract_tags(sentence, topK=5, withWeight=False, allowPOS=())
+        return keywords
+
     def fetch_keywords(self, sentence):
+        """
+        use TextRank algorithm 
+        """
         keywords = jieba.analyse.textrank(sentence, topK=5, withWeight=False, allowPOS=('ns','n','v'))
         return keywords
 
@@ -38,3 +49,4 @@ class WordAnalysis(object):
                 word_list.append(word)
 
         return word_list
+
