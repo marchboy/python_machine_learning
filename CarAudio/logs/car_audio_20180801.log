@@ -43,5 +43,8 @@
 [2018-08-01 18:28:49] --- CarCommand --- INFO: {'CAN_command': 'OPEN SUNROOF'}
 [2018-08-01 18:41:51] --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '请帮我打开天窗'}
 [2018-08-01 18:41:52] --- CarCommand --- INFO: {'CAN_command': 'OPEN SUNROOF'}
+<<<<<<< HEAD
 [2018-08-01 19:03:48] --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '请帮我打开天窗'}
 [2018-08-01 19:03:48] --- CarCommand --- INFO: {'CAN_command': 'OPEN SUNROOF'}
+=======
+>>>>>>> 9ff99e0158cbe3beca5127f4ed6cbadb859b6fa5
