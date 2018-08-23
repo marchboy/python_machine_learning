@@ -1,0 +1,45 @@
+[2018-08-01 15:02:33] - settings.py - INFO: �ú�Ŷ
+[2018-08-01 15:06:26] - root - INFO: �ú�Ŷo
+[2018-08-01 15:11:40,884] - settings.py - INFO: �ú�Ŷo
+[2018-08-01 15:16:09] - settings.py - Test p - INFO: �ú�Ŷo
+[2018-08-01 15:16:49] --- settings.py --- Test p --- INFO: �ú�Ŷo
+[2018-08-01 15:18:29] --- settings.py --- Test p --- INFO: ��ү���Ŷ������
+[2018-08-01 15:26:30] --- settings.py --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '����Ҵ��촰'}
+[2018-08-01 15:31:57] --- settings.py --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '����Ҵ��촰'}
+[2018-08-01 15:31:58] --- settings.py --- CarCommand --- INFO: {'CAN_command': 'OPEN SUNROOF'}
+[2018-08-01 15:34:23]---settings.py---RequestParas---INFO:{'car_brand': 'BMW', 'car_model': '530', 'command_text': '����Ҵ��촰'}
+[2018-08-01 15:34:25]---settings.py---CarCommand---INFO:{'CAN_command': 'OPEN SUNROOF'}
+[2018-08-01 15:34:46] --- settings.py --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '����Ҵ��촰'}
+[2018-08-01 15:34:47] --- settings.py --- CarCommand --- INFO: {'CAN_command': 'OPEN SUNROOF'}
+[2018-08-01 15:36:19] --- settings.py --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '����Ҵ��촰'}
+[2018-08-01 15:36:19] --- settings.py --- CarCommand --- INFO: {'CAN_command': 'OPEN SUNROOF'}
+[2018-08-01 15:38:07] --- settings.py --- RequestParas --- INFO: {'car_brand': 'LEXUS', 'car_model': 'LS', 'command_text': '�ܰ��Ҵ򿪳�����'}
+[2018-08-01 15:38:07] --- settings.py --- CarCommand --- INFO: {'CAN_command': ''}
+[2018-08-01 15:39:01] --- settings.py --- RequestParas --- INFO: {'car_brand': 'LEXUS', 'car_model': 'LS', 'command_text': '�ܰ��Ҵ򿪳�����'}
+[2018-08-01 15:39:03] --- settings.py --- CarCommand --- INFO: {'CAN_command': 'OPEN CAR LIGHT'}
+[2018-08-01 15:45:58] --- settings.py --- RequestParas --- INFO: {'car_brand': '����', 'car_model': '˼��', 'command_text': '�ܰ��ҹر�ǰ�����'}
+[2018-08-01 15:45:58] --- settings.py --- CarCommand --- INFO: {'CAN_command': 'CLOSE HEADLIGHT'}
+[2018-08-01 15:46:51] --- settings.py --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '����Ҵ��촰'}
+[2018-08-01 15:46:51] --- settings.py --- CarCommand --- INFO: {'CAN_command': 'OPEN SUNROOF'}
+[2018-08-01 16:08:11] --- settings --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '����Ҵ��촰'}
+[2018-08-01 16:08:14] --- settings --- CarCommand --- INFO: {'CAN_command': 'OPEN SUNROOF'}
+[2018-08-01 16:09:10] --- __console --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '����Ҵ��촰'}
+[2018-08-01 16:09:13] --- __console --- CarCommand --- INFO: {'CAN_command': 'OPEN SUNROOF'}
+[2018-08-01 16:13:08] --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '����Ҵ��촰'}
+[2018-08-01 16:13:09] --- CarCommand --- INFO: {'CAN_command': 'OPEN SUNROOF'}
+[2018-08-01 17:05:37] --- RequestParas --- INFO: {u'car_model': u'530', u'car_brand': u'BMW', u'command_text': u'\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97'}
+[2018-08-01 17:06:16] --- RequestParas --- INFO: {u'car_model': u'530', u'car_brand': u'BMW', u'command_text': u'\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97'}
+[2018-08-01 17:06:56] --- RequestParas --- INFO: {u'car_model': u'530', u'car_brand': u'BMW', u'command_text': u'\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97'}
+[2018-08-01 17:11:52] --- RequestParas --- INFO: {u'car_model': u'530', u'car_brand': u'BMW', u'command_text': u'\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97'}
+[2018-08-01 17:19:46] --- RequestParas --- INFO: {u'car_model': u'530', u'car_brand': u'BMW', u'command_text': u'\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97'}
+[2018-08-01 17:20:33] --- RequestParas --- INFO: {u'car_model': u'530', u'car_brand': u'BMW', u'command_text': u'\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97'}
+[2018-08-01 17:25:02] --- RequestParas --- INFO: {u'car_model': u'530', u'car_brand': u'BMW', u'command_text': u'\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97'}
+[2018-08-01 17:25:34] --- RequestParas --- INFO: {u'car_model': u'530', u'car_brand': u'BMW', u'command_text': u'\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97'}
+[2018-08-01 17:59:32] --- RequestParas --- INFO: {u'car_model': u'530', u'car_brand': u'BMW', u'command_text': u'\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97'}
+[2018-08-01 18:02:33] --- RequestParas --- INFO: {u'car_model': u'530', u'car_brand': u'BMW', u'command_text': u'\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97'}
+[2018-08-01 18:02:34] --- CarCommand --- INFO: {'CAN_command': u'OPEN SUNROOF'}
+[2018-08-01 18:28:14] --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '����Ҵ��촰'}
+[2018-08-01 18:28:48] --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '����Ҵ��촰'}
+[2018-08-01 18:28:49] --- CarCommand --- INFO: {'CAN_command': 'OPEN SUNROOF'}
+[2018-08-01 18:41:51] --- RequestParas --- INFO: {'car_brand': 'BMW', 'car_model': '530', 'command_text': '����Ҵ��촰'}
+[2018-08-01 18:41:52] --- CarCommand --- INFO: {'CAN_command': 'OPEN SUNROOF'}

@@ -64,7 +64,8 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "${workspaceFolder}/app.py"
+                // "FLASK_APP": "${workspaceFolder}/app.py"
+                "FLASK_APP": "${workspaceFolder}/car_app_server.py"
             },
             "args": [
                 "run",
