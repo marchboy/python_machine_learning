@@ -1,5 +1,8 @@
 #-*-coding:utf-8 -*-
+# FROM: https://yq.aliyun.com/articles/610135?utm_content=m_1000006277
+
 import imageio
+import random
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -72,7 +75,7 @@ pic[100:300, 400:800, [0,1,2]] = 200
 print(plt.imshow(pic))
 plt.show()
 
-"""
+
 
 fig, ax = plt.subplots(nrows=1, ncols=3, figsize=(15, 5))
 print(fig, '\n', ax)
@@ -85,9 +88,100 @@ plt.show()
 
 
 # Y = 0.299*R + 0.587*G + 0.114*B
-pic=imageio.imread('F:/demo_2.jpg') 
+pic=imageio.imread('E:\\dev_sm.jpg') 
 gray=lambda rgb:np.dot(rgb[...,:3],[0.299,0.587,0.114])
-gray=gray(pic) 
+gray=gray(pic)
 plt.figure(figsize=(10,10))
 plt.imshow(gray,cmap=plt.get_cmap(name='gray'))
+plt.xlabel("Height")
+plt.ylabel("Width")
+plt.title("Gray Photo")
 plt.show()
+
+gray = lambda rgb:np.dot(rgb[...,:3], [0.21, 0.72, 0.07])
+gray = gray(pic)
+plt.figure(figsize=(10, 10))
+plt.imshow(gray, cmap=plt.get_cmap(name='gray'))
+plt.show()
+
+print('Type of the image: ', type(gray))
+print()
+print('Shape of the image: {}'.format(gray.shape))
+print('Image Height {}'.format(gray.shape[0]))
+print('Image Width {}'.format(gray.shape[1]))
+print('Dimension of Image {}'.format(gray.ndim))
+print()
+print('Image size {}'.format(gray.size))
+print('Maximun RGB value in this image {}'.format(gray.max()))
+print('Minumum RGB value in this image {}'.format(gray.min()))
+print('Random indexes [X, Y]: {}'.format(gray[100, 50]))
+"""
+
+
+pic = imageio.imread('E:\\dev_sm.jpg')
+plt.figure(figsize=(10, 10))
+# plt.imshow(pic)
+# plt.show()
+
+low_pixel = pic < 20
+if low_pixel.any() == True:
+    print(low_pixel.shape)
+
+print(pic.shape)
+print(low_pixel.shape)
+
+pic[low_pixel] = random.randint(25, 225)
+plt.figure(figsize=(10, 10))
+# plt.imshow(pic)
+# plt.show()
+
+total_row, total_col, layers = pic.shape
+x, y = np.ogrid[:total_row, :total_col]
+cen_x, cen_y = total_row/2, total_col/2
+
+distance_from_the_center = np.sqrt((x-cen_x)**2 + (y-cen_y)**2)
+radius = (total_row/2)
+circular_pic = distance_from_the_center > radius  #逻辑操作符
+pic[circular_pic] = 0
+plt.figure(figsize=(10, 10))
+plt.imshow(pic)
+plt.show()
+
+
+print(f'Shape of the image {pic.shape}')
+print(f'Height {pic.shape[0]} pixels')
+print(f'wodth {pic.shape[1]} pixels')
+
+pic = imageio.imread('E:\\dev_sm.jpg')
+red_mask = pic[:,:,0] < 180
+pic[red_mask] = 0
+plt.figure(figsize=(15,15))
+plt.imshow(pic)
+
+green_mask = pic[:,:,1] < 180
+pic[green_mask] = 0
+plt.figure(figsize=(15,15))
+plt.imshow(pic)
+
+blue_mask = pic[:,:,2] < 180
+pic[blue_mask] = 0
+plt.figure(figsize=(15, 15))
+plt.imshow(pic)
+
+final_mask = np.logical_and(red_mask, green_mask, blue_mask)
+pic[final_mask] = 40
+plt.figure(figsize=(15, 15))
+plt.imshow(pic)
+plt.show()
+
+
+# fig, ax = plt.subplots(nrows=1, ncols=3, figsize=(15, 5))
+# print(fig, '\n', ax)
+# for c, ax in zip(range(3), ax):
+#     split_img = np.zeros(pic.shape, dtype='uint8')
+#     split_img[:,:,c] = pic[:,:,c]
+#     ax.imshow(split_img)
+# plt.show()
+
+
+# https://yq.aliyun.com/articles/469057?spm=a2c4e.11153940.blogcont610135.17.16c77861MVQb5g

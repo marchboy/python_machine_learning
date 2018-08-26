@@ -8,7 +8,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
-from sklearn.linear_model.stochastic_gradient import SGDClassifier
+from sklearn.linear_model import stochastic_gradient
 from sklearn.metrics import classification_report
 
 columns_names = ['Sample code number', 'Clump Thickness', 'Uniformity of Cell Size',
@@ -50,7 +50,7 @@ X_test = ss.transform(X_test)          # Perform standardization by centering an
 
 # 初始化, Stochastic Gradient Descent Classifier & Logistic Regression
 lr = LogisticRegression()
-sgdc = SGDClassifier()
+sgdc = stochastic_gradient.SGDClassifier()
 lr.fit(X_train, y_train)  # LR分类器 训练模型
 lr_y_predict = lr.predict(X_test) # 对X_test进行预测
 
@@ -201,3 +201,47 @@ print(classification_report(y_test, y_predict, target_names=iris.target_names))
 confu_matrix = confusion_matrix(y_test, y_predict)
 print(iris.target_names)
 print(confu_matrix)
+
+
+##################################################################
+# Decision Tree
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction import DictVectorizer
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+pd.set_option('display.width', 200)
+
+titanic = pd.read_csv("http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/titanic.txt")
+titanic.head()
+titanic.info()
+
+X = titanic[['pclass', 'age', 'sex']]
+y = titanic['survived']
+
+X.info()
+X['age'].fillna(X['age'].mean(), inplace=True)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=33)
+
+vec = DictVectorizer(sparse=False)
+X_train = vec.fit_transform(X_train.to_dict(orient='record'))
+print(vec.get_feature_names())
+X_test = vec.fit_transform(X_test.to_dict(orient='record'))
+
+dtc = DecisionTreeClassifier()
+dtc.fit(X_train, y_train)
+y_predict = dtc.predict(X_test)
+
+print(dtc.score(X_test, y_test))
+
+print(classification_report(y_predict, y_test, target_names=['died', 'survived']))
+confusion_mat = confusion_matrix(y_predict, y_test)
+print(confusion_mat)
+
+
+
+#-------------------------------------------------------
+# ensumble
+
