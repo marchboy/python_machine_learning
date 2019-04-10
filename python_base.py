@@ -39,3 +39,21 @@ print(p * ones)
 print(q / ones)
 
 
+import pandas as pd
+
+
+students = [ ('jack', 34, 'Sydeny' , 'Australia') ,
+             ('Riti', 30, 'Delhi' , 'India' ) ,
+             ('Vikas', 31, 'Mumbai' , 'India' ) ,
+             ('Neelu', 32, 'Bangalore' , 'India' ) ,
+             ('John', 16, 'New York' , 'US') ,
+             ('Mike', 17, 'las vegas' , 'US')  ]
+
+dfObj = pd.DataFrame(students, columns=['Name','Age','City','Country'], index=['a', 'b', 'c' , 'd' , 'e' , 'f'])
+print(dfObj)
+columnsNameArr = dfObj.columns.values  # transfer to ndarray 
+listOfColumnNames = list(columnsNameArr)
+
+indexNameArr = dfObj.index.values
+listOfindexNameArr = list(indexNameArr)
+

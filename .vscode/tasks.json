@@ -6,12 +6,8 @@
         {
             "label": "Run File",
             "command": "${config:python.pythonPath} ${file}",
-            // "command": "python ${file}",
             "type": "shell",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "presentation": {
                 "reveal": "always",
                 "panel": "new",
@@ -20,10 +16,11 @@
         },
         {
             "label": "nosetest",
-            "command": "nosetests -v",
+            // "command": "nosetests -v",
+            "command": "${config:python.pythonPath} ${file}",
             "type": "shell",
             "group": {
-                "kind": "test",
+                "kind": "build",
                 "isDefault": true
             },
             "presentation": {
