@@ -15,7 +15,7 @@
             }
         },
         {
-            "label": "nosetest",
+            "label": "Run File",
             // "command": "nosetests -v",
             "command": "${config:python.pythonPath} ${file}",
             "type": "shell",
