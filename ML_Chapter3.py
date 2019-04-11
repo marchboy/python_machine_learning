@@ -14,6 +14,3 @@ y = titanic['survived']
 
 X['age'].fillna(X['age'].mean(), inplace=True)
 
-
-
-

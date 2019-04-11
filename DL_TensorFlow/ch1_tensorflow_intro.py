@@ -49,6 +49,9 @@ learning_rate = 0.01
 optimizer = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)
 
 # 初始化所有变量
+# ---tf.global_variables_initialize
+# ---必须在所有变量和模型节点op定义完成之后,才能保证定义的内容有效
+
 init = tf.global_variables_initializer()
 
 # 定义学习参数

@@ -28,3 +28,5 @@ def gradient_ascent(data_matrix_in, class_labels):
 
 if __name__ == "__main__":
     print(load_data_set())
+
+

@@ -28,8 +28,6 @@ for (x, y, w, h) in faces:
     cv.rectangle(img, (x,y), (x+w, y+h), (255, 0, 0), 2)
 
 
-
-
 # detector = cv.CascadeClassifier('haarcascade_frontalface_default.xml')
 # cap = cv.VideoCapture(0)
 

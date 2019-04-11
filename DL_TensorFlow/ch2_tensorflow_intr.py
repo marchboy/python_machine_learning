@@ -27,3 +27,6 @@ with tf.Session() as sess:
     print("mul: {}".format(sess.run(mul, feed_dict={a:5, b:9})))
     # 使用注入机制获取节点
     print(sess.run([mul, add], feed_dict={a:5, b:3}))
+
+
+
