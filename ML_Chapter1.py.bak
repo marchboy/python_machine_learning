@@ -45,7 +45,7 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 
-os.chdir("./Python_ML/Datasets/Breast_Cancer")
+os.chdir("./Python机器学习及实践/Datasets/Breast_Cancer")
 df_train = pd.read_csv("breast-cancer-train.csv")
 df_test = pd.read_csv("breast-cancer-test.csv")
 print('-' * 35)
@@ -88,47 +88,3 @@ print("accuracy is: ", accuracy)
 print("acc is: ", acc)
 print("precision is: ", precision)
 print("predict is: ", predict)
-
-
-
-
-# 20181206
-# 温故
-from sklearn.metrics import (
-    precision_score, 
-    confusion_matrix, 
-    accuracy_score,
-    classification_report,
-    recall_score)
-
-
-y = [1,1,0,0,1,1]
-y_pred = [1,0,0,0,1,1]
-
-# 混淆矩阵
-confusion_mat = confusion_matrix(y, y_pred)
-print(confusion_mat)
-
-tn, fp, fn, tp = confusion_mat.ravel()
-print(tn, fp, fn, tp)
-print(tp, fp)
-
-# 分类报告
-print(classification_report(y, y_pred))
-
-# 针对预估样本中的正例而言，有多少个预估正确的
-precision = precision_score(y, y_pred, average ='micro')
-print(precision)
-precision = precision_score(y, y_pred)
-print(precision)
-
-# 针对预测样本而言，有多少个预测为正的是真正的正样本
-recall = recall_score(y, y_pred)
-print(recall)
-
-# 针对总样本而言，有多少个是预估正确的
-accuracy = accuracy_score(y, y_pred)
-print(accuracy)
-
-# recall：针对原来的样本而言，表示样本中的正例有多少是被预测正确了
-# precision：针对预测结果而言，表示预测为正的样本中有多少是真正的正样本

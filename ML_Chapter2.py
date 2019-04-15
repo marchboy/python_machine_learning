@@ -54,7 +54,7 @@ sgdc = stochastic_gradient.SGDClassifier()
 lr.fit(X_train, y_train)  # LR分类器 训练模型
 lr_y_predict = lr.predict(X_test) # 对X_test进行预测
 
-sgdc.fit(X_train, y_train) # 随机梯度下降分类器 
+sgdc.fit(X_train, y_train) # 随机梯度下降分类器
 sgdc_y_predict = sgdc.predict(X_test) # 对X_test进行预测
 
 # 性能分析（Performance）
@@ -169,8 +169,9 @@ print(np.array_str(confu_matrix, 100))
 # precision：针对预测结果而言，表示预测为正的样本中有多少是真正的正样本
 
 # 关于混淆矩阵的说明
+"""
 # y_test、y_predict为第一、二参数时：则横向为真是值，纵向为预测值
-
+"""
 
 precision = precision_score(y_test, y_predict, average='macro')
 print(precision)

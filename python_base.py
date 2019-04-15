@@ -39,3 +39,18 @@ print(p * ones)
 print(q / ones)
 
 
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+
+data = np.array(np.random.randint(-100,100,24).reshape(6,4))
+train = data[:4]
+test = data[4:]
+
+minmaxTransformer = MinMaxScaler(feature_range=(0,1))
+
+train_transformer = minmaxTransformer.fit_transform(train)
+test_transformer = minmaxTransformer.transform(test)
+
+print(train_transformer)
+print(test_transformer)
+
