@@ -39,6 +39,7 @@ print(p * ones)
 print(q / ones)
 
 
+<<<<<<< HEAD
 import pandas as pd
 
 
@@ -57,4 +58,20 @@ listOfColumnNames = list(columnsNameArr)
 indexNameArr = dfObj.index.values
 listOfindexNameArr = list(indexNameArr)
 
+=======
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+
+data = np.array(np.random.randint(-100,100,24).reshape(6,4))
+train = data[:4]
+test = data[4:]
+
+minmaxTransformer = MinMaxScaler(feature_range=(0,1))
+
+train_transformer = minmaxTransformer.fit_transform(train)
+test_transformer = minmaxTransformer.transform(test)
+
+print(train_transformer)
+print(test_transformer)
+>>>>>>> 44f4f9e1ba7f82ee60b5f7405e7abea2966e3646
 

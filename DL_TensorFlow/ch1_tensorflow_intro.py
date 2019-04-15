@@ -70,7 +70,7 @@ with tf.Session() as sess:
     for epoch in range(training_epochs):
         for (x, y) in zip(train_X, train_Y):
             # 注入机制,将具体的实参注入到placeholder中,feed只在调用它的方法内有效,方法结束feed消失
-            # 使用feed机制将具体数值通过占位符传入
+            # 使用feed机制将具体数值通过占位符传入 
             sess.run(optimizer, feed_dict={X:x, Y:y})
         
         # 显示训练中的详细信息
