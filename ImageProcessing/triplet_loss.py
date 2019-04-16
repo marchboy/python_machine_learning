@@ -49,4 +49,9 @@ word embedding，就是找到一个映射或者函数，生成在一个新的空
 
 """
 
+import numpy as np
 
+def test_pairwise_distances(squared=False):
+    embeddings = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]], dtype=np.float32)
+    dot_product = np.dot(embeddings, np.transpose(embeddings))
+    
