@@ -1,0 +1,943 @@
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:15:51] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:15:51] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:15:51] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:15:51] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:15:51] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:15:51] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:15:51] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:15:51] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:15:51] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:17:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:50] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:17:51] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:17:51] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:17:51] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:17:51] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:17:51] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:17:52] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:17:52] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:17:52] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:17:52] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:23:15] --- RequestDataSDK --- INFO: {'request_file': 'REC0.WAV'}
+[2018-08-27 10:23:15] --- RequestDataAPI --- INFO: {'request_file': 'REC0.WAV'}
+[2018-08-27 10:23:16] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:23:16] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bd5\u4e00\u4e0b\u800c\u5df2\uff0cc0\u6211\u4eec\u6d4b\u8bd5\u4e00\u4e0b\uff0c\u65e0\u804a\u4e86\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    试一下而已，c0我们测试一下，无聊了。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:29:43] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:43] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:29:44] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:29:45] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:29:45] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:29:45] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:29:45] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:29:45] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 10:31:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:31:11] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:31:11] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:31:11] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:31:11] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:31:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:31:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:31:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:31:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:31:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:35:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:19] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:35:19] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:35:19] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:35:19] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:35:19] --- ResponseDataSDK --- ERROR: {"response_data": ["invalid syntax", ["<string>", 1, 1, "\u8bf7\u5e2e\u6211\u6253\u5f00\u5929\u7a97\uff0c\u6253\u5f00\u5929\u7a97\u3002"]], "errcode": 2}
+Traceback (most recent call last):
+  File "speech_recognition_server.py", line 75, in request_ifly_sdk
+    print(eval(result))
+  File "<string>", line 1
+    请帮我打开天窗，打开天窗。
+    ^
+SyntaxError: invalid syntax
+[2018-08-27 10:35:20] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:35:20] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:35:20] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:35:20] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:35:20] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:35:38] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:38] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:35:39] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:35:39] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:35:39] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:35:40] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:35:40] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:35:41] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:35:42] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:39:38] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:39:38] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:39:38] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:39:38] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:40:17] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:17] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:40:18] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:40:18] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:40:18] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:40:19] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:40:19] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:40:19] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:52:30] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:30] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:52:31] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:52:32] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:52:32] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:52:32] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:54:28] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:54:28] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:54:28] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:54:28] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:54:28] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:54:28] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:54:28] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:54:28] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:54:28] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 10:54:28] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:54:29] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:54:29] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 10:54:29] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:09:24] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:09:24] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:09:24] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:09:24] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:09:24] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:09:24] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:09:24] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:20:36] --- RequestDataSDK --- INFO: {'request_file': 'REC0.WAV'}
+[2018-08-27 11:20:36] --- RequestDataAPI --- INFO: {'request_file': 'REC0.WAV'}
+[2018-08-27 11:20:36] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "试一下而已，c0我们测试一下，无聊了。", "errcode": 0}
+[2018-08-27 11:20:36] --- RequestDataSDK --- INFO: {'request_file': 'REC1.WAV'}
+[2018-08-27 11:20:36] --- RequestDataAPI --- INFO: {'request_file': 'REC1.WAV'}
+[2018-08-27 11:20:37] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "主驾驶向座椅向后移动。", "errcode": 0}
+[2018-08-27 11:20:37] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "试一下而已，对林我们测试一下五秒路。", "errcode": 0}
+[2018-08-27 11:20:37] --- RequestDataSDK --- INFO: {'request_file': 'REC2.WAV'}
+[2018-08-27 11:20:37] --- RequestDataAPI --- INFO: {'request_file': 'REC2.WAV'}
+[2018-08-27 11:20:37] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "主驾驶项目座椅向后移动。", "errcode": 0}
+[2018-08-27 11:20:37] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "你驾驶座椅向后移动。", "errcode": 0}
+[2018-08-27 11:20:37] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:20:37] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:20:37] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "驾驶座椅向后移动。", "errcode": 0}
+[2018-08-27 11:20:37] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:20:37] --- RequestDataSDK --- INFO: {'request_file': 'REC4.WAV'}
+[2018-08-27 11:20:37] --- RequestDataAPI --- INFO: {'request_file': 'REC4.WAV'}
+[2018-08-27 11:20:38] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "现在车辆的状态如何？各个模块状态？", "errcode": 0}
+[2018-08-27 11:20:38] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:20:38] --- RequestDataSDK --- INFO: {'request_file': 'REC5.WAV'}
+[2018-08-27 11:20:38] --- RequestDataAPI --- INFO: {'request_file': 'REC5.WAV'}
+[2018-08-27 11:20:38] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "当前车辆状态如何状态？", "errcode": 0}
+[2018-08-27 11:20:38] --- RequestDataSDK --- INFO: {'request_file': 'REC6.WAV'}
+[2018-08-27 11:20:38] --- RequestDataAPI --- INFO: {'request_file': 'REC6.WAV'}
+[2018-08-27 11:20:38] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "现在车辆的状态如何？各个模块状态？", "errcode": 0}
+[2018-08-27 11:20:38] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "当前车辆状态如何状态？", "errcode": 0}
+[2018-08-27 11:20:38] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "副驾驶座椅向前移，副驾驶不一样的。", "errcode": 0}
+[2018-08-27 11:20:39] --- RequestDataSDK --- INFO: {'request_file': 'REC7.WAV'}
+[2018-08-27 11:20:39] --- RequestDataAPI --- INFO: {'request_file': 'REC7.WAV'}
+[2018-08-27 11:20:39] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "副驾驶座椅向前移，副驾驶座椅调节。", "errcode": 0}
+[2018-08-27 11:20:39] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "陈。", "errcode": 0}
+[2018-08-27 11:20:39] --- RequestDataSDK --- INFO: {'request_file': 'REC8.WAV'}
+[2018-08-27 11:20:39] --- RequestDataAPI --- INFO: {'request_file': 'REC8.WAV'}
+[2018-08-27 11:20:39] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "3.25秒之内，我说的话在泉城路。", "errcode": 0}
+[2018-08-27 11:20:39] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "还没开门。", "errcode": 0}
+[2018-08-27 11:20:39] --- RequestDataSDK --- INFO: {'request_file': 'REC9.WAV'}
+[2018-08-27 11:20:39] --- RequestDataAPI --- INFO: {'request_file': 'REC9.WAV'}
+[2018-08-27 11:20:40] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "比如说现在天线动作。", "errcode": 0}
+[2018-08-27 11:20:40] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "3.25秒之内，我说的话全程录像。", "errcode": 0}
+[2018-08-27 11:20:40] --- RequestDataSDK --- INFO: {'request_file': 'REC10.WAV'}
+[2018-08-27 11:20:40] --- RequestDataAPI --- INFO: {'request_file': 'REC10.WAV'}
+[2018-08-27 11:20:40] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "比如说现在天线动作。", "errcode": 0}
+[2018-08-27 11:20:40] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "这有一个USB的设备。", "errcode": 0}
+[2018-08-27 11:20:40] --- RequestDataSDK --- INFO: {'request_file': 'REC11.WAV'}
+[2018-08-27 11:20:40] --- RequestDataAPI --- INFO: {'request_file': 'REC11.WAV'}
+[2018-08-27 11:20:40] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "这有一个USB的设备。", "errcode": 0}
+[2018-08-27 11:20:41] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "需要可以浏览，嗯，其实现在已经开始录音了。", "errcode": 0}
+[2018-08-27 11:20:41] --- RequestDataSDK --- INFO: {'request_file': 'REC12.WAV'}
+[2018-08-27 11:20:41] --- RequestDataAPI --- INFO: {'request_file': 'REC12.WAV'}
+[2018-08-27 11:20:41] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "需要可以浏览，答案，其实现在已经开始注意了。", "errcode": 0}
+[2018-08-27 11:20:41] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "现在我们在测试胎压，几点。", "errcode": 0}
+[2018-08-27 11:20:42] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "现在我们在测试胎压，吉林。", "errcode": 0}
+[2018-08-27 11:20:59] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:20:59] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:20:59] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:20:59] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:21:00] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:21:00] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:21:00] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:21:00] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:21:01] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:21:01] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:22:08] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:22:08] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:22:08] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:22:08] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:22:08] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:22:08] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:22:08] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:22:08] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:22:08] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:22:08] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:22:09] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:22:09] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:22:09] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 11:59:59] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:59:59] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:59:59] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:59:59] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:59:59] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:59:59] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 11:59:59] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:00:00] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:00:00] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:00:00] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:00:00] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:00:00] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:01:58] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:01:58] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:01:58] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:01:58] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:01:58] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:01:58] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:01:58] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:01:59] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:01:59] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:01:59] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:03:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:03:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:03:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:03:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:03:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:03:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:03:11] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:03:11] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:03:11] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:03:11] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:03:11] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:03:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:03:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:03:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:03:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:03:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:08:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:08:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:08:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:08:18] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:08:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:08:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:08:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:08:18] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:08:18] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:08:18] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:08:18] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:08:19] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:08:19] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:08:19] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:08:19] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:08:19] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:09:03] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:09:03] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:09:03] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:09:03] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:09:03] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:09:03] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:09:03] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:09:04] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:09:04] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:09:04] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:09:05] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:09:05] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:09:05] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:09:05] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:09:05] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:21] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:21] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 12:10:22] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:22] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:23] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:23] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:23] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:24] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:24] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:24] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:24] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:24] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:24] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:24] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 12:10:24] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:32] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:38:32] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:38:32] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:38:32] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:38:32] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:32] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:32] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:32] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:32] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:32] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:33] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:33] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:33] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:33] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:35] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:35] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:35] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:35] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:35] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:35] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:35] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:35] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:38:35] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:45:33] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:45:33] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:45:34] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:45:34] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:46:05] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:46:05] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:46:05] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:46:06] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:46:11] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:46:11] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:46:11] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:46:11] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:46:11] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:46:11] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:46:11] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:46:12] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:46:12] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:46:12] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:46:12] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:46:13] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:46:13] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:46:13] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:46:13] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:46:13] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:49:30] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:49:30] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:49:30] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:49:30] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:49:30] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:49:30] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:49:30] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:49:31] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:49:31] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:49:31] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:49:31] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:49:31] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:49:32] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:49:32] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:49:32] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:49:32] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:49:32] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:54:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:54:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:54:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:54:10] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:54:10] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 17:54:10] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:54:10] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:54:10] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:54:10] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:54:10] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:54:11] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:54:11] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:54:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:54:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 17:54:12] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:13:55] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 18:13:55] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 18:13:55] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 18:13:55] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 18:13:55] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 18:13:56] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:13:57] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:15:53] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 18:15:53] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 18:15:53] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 18:15:53] --- RequestDataSDK --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 18:15:53] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 18:15:53] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 18:15:53] --- RequestDataAPI --- INFO: {'request_file': 'REC3.WAV'}
+[2018-08-27 18:15:53] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:15:54] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:15:54] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:15:54] --- ResponseDataSDK --- INFO: {"response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:15:54] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:15:55] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:15:55] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:15:55] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:15:55] --- ResponseDataAPI --- INFO: {"response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:35:56] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535366150440, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:35:56] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535366150440, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:35:56] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535366150440, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:35:56] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535366150440, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:35:57] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535366150440, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:36:01] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535366150440, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:36:02] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535366150440, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:36:02] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535366150440, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:36:02] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535366150440, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 18:36:02] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535366150440, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:48] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:48] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:48] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:48] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:48] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:50] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:53] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:53] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:53] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:53] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:53] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:54] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:54] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:54] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:54] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:14:55] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:27:01] --- ResponseDataSDK --- INFO: {"request_file": "REC0.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "试一下而已，c0我们测试一下，无聊了。", "errcode": 0}
+[2018-08-27 19:27:02] --- ResponseDataAPI --- INFO: {"request_file": "REC0.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "试一下而已，对林我们测试一下五秒路。", "errcode": 0}
+[2018-08-27 19:27:02] --- ResponseDataSDK --- INFO: {"request_file": "REC1.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "主驾驶向座椅向后移动。", "errcode": 0}
+[2018-08-27 19:27:02] --- ResponseDataSDK --- INFO: {"request_file": "REC2.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "你驾驶座椅向后移动。", "errcode": 0}
+[2018-08-27 19:27:02] --- ResponseDataAPI --- INFO: {"request_file": "REC1.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "主驾驶项目座椅向后移动。", "errcode": 0}
+[2018-08-27 19:27:02] --- ResponseDataAPI --- INFO: {"request_file": "REC2.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "驾驶座椅向后移动。", "errcode": 0}
+[2018-08-27 19:27:02] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:27:03] --- ResponseDataSDK --- INFO: {"request_file": "REC4.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "现在车辆的状态如何？各个模块状态？", "errcode": 0}
+[2018-08-27 19:27:03] --- ResponseDataAPI --- INFO: {"request_file": "REC4.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "现在车辆的状态如何？各个模块状态？", "errcode": 0}
+[2018-08-27 19:27:03] --- ResponseDataSDK --- INFO: {"request_file": "REC5.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "当前车辆状态如何状态？", "errcode": 0}
+[2018-08-27 19:27:03] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:27:03] --- ResponseDataAPI --- INFO: {"request_file": "REC5.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "当前车辆状态如何状态？", "errcode": 0}
+[2018-08-27 19:27:04] --- ResponseDataSDK --- INFO: {"request_file": "REC6.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "副驾驶座椅向前移，副驾驶不一样的。", "errcode": 0}
+[2018-08-27 19:27:04] --- ResponseDataSDK --- INFO: {"request_file": "REC7.WAV", "request_unixtime": 1535368483395, "response_type": "sdk", "response_data": "陈。", "errcode": 0}
+[2018-08-27 19:27:04] --- ResponseDataAPI --- INFO: {"request_file": "REC6.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "副驾驶座椅向前移，副驾驶座椅调节。", "errcode": 0}
+[2018-08-27 19:27:04] --- ResponseDataAPI --- INFO: {"request_file": "REC7.WAV", "request_unixtime": 1535368483395, "response_type": "API", "response_data": "还没开门。", "errcode": 0}
+[2018-08-27 19:40:17.%f] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:18.%f] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:18.%f] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:18.%f] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:18.%f] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:19.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:19.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:19.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:19.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:19.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:37.%f] --- ResponseDataSDK --- INFO: {'response_type': 'sdk', 'response_data': 'iflytec_Internal error', 'errcode': 5}
+[2018-08-27 19:40:37.%f] --- ResponseDataSDK --- INFO: {'response_type': 'sdk', 'response_data': 'iflytec_Internal error', 'errcode': 5}
+[2018-08-27 19:40:37.%f] --- ResponseDataSDK --- INFO: {'response_type': 'sdk', 'response_data': 'iflytec_Internal error', 'errcode': 5}
+[2018-08-27 19:40:38.%f] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:38.%f] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:38.%f] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:38.%f] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:39.%f] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:39.%f] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:39.%f] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:39.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:39.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:39.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:40.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:40.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:40.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:40.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:40.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:40.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:40:40.%f] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370013620, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:19.845] --- ResponseDataSDK --- INFO: {'response_type': 'sdk', 'response_data': 'iflytec_Internal error', 'errcode': 5}
+[2018-08-27 19:46:20.112] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:20.370] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:20.775] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:20.798] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:20.887] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:20.975] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:21.333] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:21.737] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:21.750] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:21.997] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:22.026] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:22.027] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:22.146] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:22.146] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:22.146] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:22.550] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:22.797] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:22.850] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:22.891] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:46:22.892] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:14.563] --- ResponseDataSDK --- INFO: {'response_type': 'sdk', 'response_data': 'iflytec_Internal error', 'errcode': 5}
+[2018-08-27 19:51:15.145] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:15.157] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:15.434] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:15.513] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:15.609] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:15.653] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:15.930] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:15.970] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:15.983] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:16.500] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:16.549] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:17.463] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:17.512] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:17.517] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:17.539] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:17.559] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:17.590] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:17.622] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:51:17.634] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:16.672] --- ResponseDataSDK --- INFO: {'response_type': 'sdk', 'response_data': 'iflytec_Internal error', 'errcode': 5}
+[2018-08-27 19:53:16.684] --- ResponseDataSDK --- INFO: {'response_type': 'sdk', 'response_data': 'iflytec_Internal error', 'errcode': 5}
+[2018-08-27 19:53:16.917] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:17.014] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:17.075] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:17.109] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:17.145] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:17.294] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:17.729] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:17.779] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:17.986] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:19.295] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:19.433] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:19.462] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:19.534] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:19.549] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:19.575] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:19.583] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:19.584] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:19.681] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:57.691] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:57.814] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:57.821] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:57.858] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:57.969] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:58.050] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:58.064] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:58.096] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:58.258] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:58.269] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:59.438] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:59.557] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:59.576] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:59.608] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:53:59.676] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:00.121] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:00.380] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:00.444] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:00.484] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:00.499] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:00.909] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:01.091] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:01.170] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:01.191] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:01.295] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:01.451] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:01.548] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:01.765] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:01.780] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:01.798] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:02.898] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:03.233] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:03.249] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:03.254] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:03.303] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:03.663] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:03.665] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:03.691] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:03.791] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:54:09.319] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370375463, "response_type": "API", "response_data": "", "errcode": 0}
+[2018-08-27 19:55:36.680] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370929960, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:55:36.752] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370929960, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:55:36.779] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370929960, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:55:36.805] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370929960, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:55:37.352] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370929960, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:55:37.405] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370929960, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:55:37.436] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370929960, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:55:37.450] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370929960, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:55:37.492] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370929960, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:55:37.503] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370929960, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:21.991] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:22.179] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:22.298] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:22.354] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:22.391] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:22.543] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:22.611] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:22.744] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:22.746] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:22.944] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:23.617] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:23.826] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:23.904] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:24.318] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:24.477] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:24.482] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:24.543] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:24.598] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:24.660] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:24.718] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:41.350] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:41.853] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:42.035] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:42.077] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:42.077] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:42.237] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:42.261] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:43.054] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:43.272] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:43.604] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:43.618] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:43.766] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:43.904] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:43.948] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:44.148] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:44.577] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:44.607] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:44.757] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:44.895] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:45.159] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:45.260] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:45.285] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:45.348] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:45.375] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:45.389] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:45.438] --- ResponseDataSDK --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "sdk", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:45.509] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:45.808] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:46.199] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:46.204] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:46.294] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:46.319] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:46.382] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:46.578] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:46.582] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:46.639] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:46.674] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:46.768] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:46.791] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}
+[2018-08-27 19:56:46.914] --- ResponseDataAPI --- INFO: {"request_file": "REC3.WAV", "request_unixtime": 1535370976814, "response_type": "API", "response_data": "请帮我打开天窗，打开天窗。", "errcode": 0}

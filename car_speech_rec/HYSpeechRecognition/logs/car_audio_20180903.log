@@ -1,0 +1,131 @@
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008582L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008593L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008582L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008592L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008593L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008582L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008613L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008592L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008582L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008593L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008613L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008592L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008593L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:48] --- ResponseDataSDK --- INFO: {'request_file': 'REC2.WAV', 'request_unixtime': 1535965008613L, 'response_type': 'sdk', 'response_data': 'sdk run error', 'errcode': 3}
+[2018-09-03 16:56:54] --- ResponseDataAPI --- ERROR: {"request_file": "REC2.WAV", "request_unixtime": 1535965010025, "response_data": ["No JSON object could be decoded"], "errcode": 4}
+Traceback (most recent call last):
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_server.py", line 119, in request_ifly_api
+    audio_content = speech_recongnition_iflytec(content)
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_api.py", line 39, in speech_recongnition_iflytec
+    res = json.loads(result).get("data")
+  File "D:\Program\Python\Python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[2018-09-03 16:56:54] --- ResponseDataAPI --- ERROR: {"request_file": "REC2.WAV", "request_unixtime": 1535965010025, "response_data": ["No JSON object could be decoded"], "errcode": 4}
+Traceback (most recent call last):
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_server.py", line 119, in request_ifly_api
+    audio_content = speech_recongnition_iflytec(content)
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_api.py", line 39, in speech_recongnition_iflytec
+    res = json.loads(result).get("data")
+  File "D:\Program\Python\Python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[2018-09-03 16:56:54] --- ResponseDataAPI --- ERROR: {"request_file": "REC2.WAV", "request_unixtime": 1535965010025, "response_data": ["No JSON object could be decoded"], "errcode": 4}
+Traceback (most recent call last):
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_server.py", line 119, in request_ifly_api
+    audio_content = speech_recongnition_iflytec(content)
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_api.py", line 39, in speech_recongnition_iflytec
+    res = json.loads(result).get("data")
+  File "D:\Program\Python\Python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[2018-09-03 16:56:54] --- ResponseDataAPI --- ERROR: {"request_file": "REC2.WAV", "request_unixtime": 1535965010004, "response_data": ["No JSON object could be decoded"], "errcode": 4}
+Traceback (most recent call last):
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_server.py", line 119, in request_ifly_api
+    audio_content = speech_recongnition_iflytec(content)
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_api.py", line 39, in speech_recongnition_iflytec
+    res = json.loads(result).get("data")
+  File "D:\Program\Python\Python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[2018-09-03 16:56:54] --- ResponseDataAPI --- ERROR: {"request_file": "REC2.WAV", "request_unixtime": 1535965010004, "response_data": ["No JSON object could be decoded"], "errcode": 4}
+Traceback (most recent call last):
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_server.py", line 119, in request_ifly_api
+    audio_content = speech_recongnition_iflytec(content)
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_api.py", line 39, in speech_recongnition_iflytec
+    res = json.loads(result).get("data")
+  File "D:\Program\Python\Python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[2018-09-03 16:56:54] --- ResponseDataAPI --- ERROR: {"request_file": "REC2.WAV", "request_unixtime": 1535965010013, "response_data": ["No JSON object could be decoded"], "errcode": 4}
+Traceback (most recent call last):
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_server.py", line 119, in request_ifly_api
+    audio_content = speech_recongnition_iflytec(content)
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_api.py", line 39, in speech_recongnition_iflytec
+    res = json.loads(result).get("data")
+  File "D:\Program\Python\Python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[2018-09-03 16:56:54] --- ResponseDataAPI --- ERROR: {"request_file": "REC2.WAV", "request_unixtime": 1535965010015, "response_data": ["No JSON object could be decoded"], "errcode": 4}
+Traceback (most recent call last):
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_server.py", line 119, in request_ifly_api
+    audio_content = speech_recongnition_iflytec(content)
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_api.py", line 39, in speech_recongnition_iflytec
+    res = json.loads(result).get("data")
+  File "D:\Program\Python\Python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[2018-09-03 16:56:54] --- ResponseDataAPI --- ERROR: {"request_file": "REC2.WAV", "request_unixtime": 1535965010015, "response_data": ["No JSON object could be decoded"], "errcode": 4}
+Traceback (most recent call last):
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_server.py", line 119, in request_ifly_api
+    audio_content = speech_recongnition_iflytec(content)
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_api.py", line 39, in speech_recongnition_iflytec
+    res = json.loads(result).get("data")
+  File "D:\Program\Python\Python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[2018-09-03 16:56:54] --- ResponseDataAPI --- ERROR: {"request_file": "REC2.WAV", "request_unixtime": 1535965010004, "response_data": ["No JSON object could be decoded"], "errcode": 4}
+Traceback (most recent call last):
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_server.py", line 119, in request_ifly_api
+    audio_content = speech_recongnition_iflytec(content)
+  File "e:\pythonProject\HYSpeechRecognition\speech_recognition_api.py", line 39, in speech_recongnition_iflytec
+    res = json.loads(result).get("data")
+  File "D:\Program\Python\Python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program\Python\Python27\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
