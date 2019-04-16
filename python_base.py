@@ -39,9 +39,7 @@ print(p * ones)
 print(q / ones)
 
 
-<<<<<<< HEAD
 import pandas as pd
-
 
 students = [ ('jack', 34, 'Sydeny' , 'Australia') ,
              ('Riti', 30, 'Delhi' , 'India' ) ,
@@ -58,7 +56,8 @@ listOfColumnNames = list(columnsNameArr)
 indexNameArr = dfObj.index.values
 listOfindexNameArr = list(indexNameArr)
 
-=======
+#-------------------------------------------------------------
+
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
@@ -73,5 +72,4 @@ test_transformer = minmaxTransformer.transform(test)
 
 print(train_transformer)
 print(test_transformer)
->>>>>>> 44f4f9e1ba7f82ee60b5f7405e7abea2966e3646
 
