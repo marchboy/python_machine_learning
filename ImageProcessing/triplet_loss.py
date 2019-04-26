@@ -40,7 +40,7 @@ word embedding，就是找到一个映射或者函数，生成在一个新的空
 # define an objective function and optimize it!
 
 # It is intractable to learn all the trees at once.
-#  Instead, we use an additive strategy: fix what we have learned, and add one new tree at a time.
+# Instead, we use an additive strategy: fix what we have learned, and add one new tree at a time.
 
 # ------------------------------------训练方法----------------------------------------------
 """

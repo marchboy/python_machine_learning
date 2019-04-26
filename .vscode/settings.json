@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/usr/local/anaconda/bin/python",
+    "python.pythonPath": "D:\\Program\\Python\\Python36\\python.exe",
     "python.formatting.provider": "autopep8",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true
