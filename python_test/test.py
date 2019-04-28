@@ -304,3 +304,134 @@ d['a']['b'].add('100')
 d['a']['b'].add('1400')
 d['a']['c'].add('100')
 
+
+
+"""
+https://blog.csdn.net/sinat_26917383/article/details/77917881
+"""
+
+
+import pandas as pd
+import urllib
+
+try:
+    df = pd.read_csv(
+        "https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data",
+        header=None
+    )
+except urllib.error.URLError:
+    df = pd.read_csv(
+        "https://raw.githubusercontent.com/rasbt/python-machine-learning-book/master/code/datasets/wdbc/wdbc.data", 
+        header=None
+    )
+print('row, columns', df.shape)
+print(df.head())
+
+############# 使用sklearn中的LabelEncoder类将类标从原始字符串转化成整数
+from sklearn.preprocessing import LabelEncoder
+
+X = df.loc[:, 2:].values
+y = df.loc[:, 1].values
+
+
+le = LabelEncoder()
+y = le.fit_transform(y)
+le.transform(['M', 'B'])
+
+##################切分数据集
+import sklearn
+sklearn_version = sklearn.__version__
+if sklearn_version < '0.18':
+    from sklearn.cross_validation import train_test_split
+else:
+    from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=1)
+# test_size：样本占比，如果是整数的话就是样本的数量
+# random_state：是随机数的种子。0或不填，每次都会不一样
+
+#pipeline 实现了对全部步骤的流式化封装和管理，可以很方便地使参数集在新数据集上被重复使用。
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.linear_model import LogisticRegression
+from sklearn.pipeline import Pipeline
+from sklearn.metrics import classification_report, precision_score, accuracy_score, confusion_matrix
+
+
+# scaler = StandardScaler()
+# x_train_scaled = scaler.fit_transform(X_train)
+# x_test_scaled = scaler.transform(X_test)
+
+# pca = PCA(n_components=2)
+# x_train_pca = pca.fit_transform(x_train_scaled)
+# x_test_pca = pca.transform(x_test_scaled)
+
+# lr_model = LogisticRegression(random_state=1)
+# lr_model.fit(x_train_pca, y_train)
+# y_pred = lr_model.predict(x_test_pca)
+
+pipe_lr = Pipeline(
+    [('scl', StandardScaler()), 
+    ('pca', PCA(n_components=2)), 
+    ('clf', LogisticRegression(random_state=1))]
+)
+pipe_lr.fit(X_train, y_train)
+print('Accuracy: %.3f' % pipe_lr.score(X_test, y_test))
+
+y_pred = pipe_lr.predict(X_test)
+print('New Accuraty: %.3f' % precision_score(y_test, y_pred))
+print('New Accuraty: %.3f' % accuracy_score( y_test, y_pred))
+print(classification_report(y_test, y_pred, digits=3))
+print(confusion_matrix(y_test, y_pred))
+
+
+from datetime import datetime
+if sklearn_version < '0.18':
+    from sklearn.cross_validation import cross_val_score
+else:
+    from sklearn.model_selection import cross_val_score, cross_val_predict
+
+# ---------------------------------model 在哪里-------------------------------------
+time_1 = datetime.now()
+scores = cross_val_score(estimator=pipe_lr, X=X_train, y=y_train, cv=10, n_jobs=1)
+time_2 = datetime.now()
+print((time_2 - time_1).total_seconds())
+
+print('Time Used {}s'.format((time_2 - time_1).microseconds/10e6))
+print('CV accuracy scores: %s' % scores)
+print('CV accuracy: %.3f +/- %.3f' % (np.mean(scores), np.std(scores)))
+
+
+
+
+# 分层K折交叉验证，是对K折交叉验证的改进
+# 类别比例相差较大时，在分层交叉验证中，类别比例在每个分块中得以保持，使得每个分块中的类别比例与训练数据集的整体比例一致
+# 疑问是模型在哪里，如何保模型？？？？？
+import numpy as np
+from sklearn.externals import joblib
+from sklearn.model_selection import StratifiedKFold
+kfold = StratifiedKFold(n_splits=10, random_state=1).split(X_train, y_train)
+
+scores = []
+for k, (train, test) in enumerate(kfold):
+    print("-----------------")
+    print(k, (train, test))
+    print(X_train[train].shape)
+    print("==================")
+    pipe_lr.fit(X_train[train], y_train[train])
+    score = pipe_lr.score(X_train[test], y_train[test])
+    joblib.dump(pipe_lr, './python_test/test_model_1.pkl')
+    scores.append(score)
+    print('Fold: %s, Class dist.: %s, Acc: %.3f' % (k+1, np.bincount(y_train[train]), score))
+
+print('\nCV accuracy: %.3f +/- %.3f' % (np.mean(scores), np.std(scores)))
+
+
+###### 加载模型 and make a test
+model = joblib.load('./python_test/test_model.pkl', )
+
+model.predict([[17.99,10.38,122.8,1001,0.1184,0.2776,0.3001,0.1471,0.2419,0.07871,1.095,0.9053,8.589,153.4,
+0.006399,0.04904,0.05373,0.01587,0.03003,0.006193,25.38,17.33,184.6,2019,0.1622,0.6656,0.7119,0.2654,0.4601,0.1189],
+[8.598,20.98,54.66,221.8,0.1243,0.08963,0.03,0.009259,0.1828,0.06757,0.3582,2.067,2.493,18.39,0.01193,0.03162,0.03,
+0.009259,0.03357,0.003048,9.565,27.04,62.06,273.9,0.1639,0.1698,0.09001,0.02778,0.2972,0.07712
+]])
