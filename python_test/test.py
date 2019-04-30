@@ -55,6 +55,24 @@ print(len(names))
 # 3）.iloc,.iat，选列是只能是position，不能是列名 
 # 4）df[]只能进行行选择，或列选择，不能同时进行列选择，列选择只能是列名。
 """
+import pandas as pd
+from smart_open import smart_open
+
+def read_csv_file(filename):
+    path = './daguan-classify-2018/data/'
+    n = 0
+    with smart_open(path + filename, mode='rb') as f:
+        # lines = f.readline()
+        # print(lines)
+        for line in f:
+            n += 1
+            if n >= 2:
+                break
+            print(line)
+
+read_csv_file('train_set.csv')
+
+
 
 import pandas as pd
 import numpy as np
@@ -435,3 +453,5 @@ model.predict([[17.99,10.38,122.8,1001,0.1184,0.2776,0.3001,0.1471,0.2419,0.0787
 [8.598,20.98,54.66,221.8,0.1243,0.08963,0.03,0.009259,0.1828,0.06757,0.3582,2.067,2.493,18.39,0.01193,0.03162,0.03,
 0.009259,0.03357,0.003048,9.565,27.04,62.06,273.9,0.1639,0.1698,0.09001,0.02778,0.2972,0.07712
 ]])
+
+
