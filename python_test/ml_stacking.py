@@ -28,7 +28,10 @@ def get_stacking(clf, x_train, y_train, x_test, n_folds=10):
         clf.fit(x_tra, y_tra)
 
         second_level_train_set[test_index] = clf.predict(x_tst)
+        print("==============================================")
+        print(second_level_train_set)
         test_nfolds_sets[:, i] = clf.predict(x_test)
+        print(test_nfolds_sets)
 
     second_level_test_set[:] = test_nfolds_sets.mean(axis=1)
     return second_level_train_set, second_level_test_set
