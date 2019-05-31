@@ -2,5 +2,6 @@
     "python.pythonPath": "D:\\Program\\Python\\Python36\\python.exe",
     "python.formatting.provider": "autopep8",
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.dataScience.jupyterServerURI": "http://localhost:8890/notebooks/0003_project/python_machine_learning/deep-learning-har/explore_data.ipynb"
 }

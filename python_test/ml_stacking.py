@@ -2,6 +2,7 @@
 
 # date:2019-04-30
 # Model Stacking
+# https://www.cnblogs.com/jiaxin359/p/8559029.html
 
 import numpy as np
 from sklearn.model_selection import KFold
@@ -76,6 +77,8 @@ meta_test = np.concatenate([y_test_set.reshape(-1, 1) for y_test_set in test_set
 from sklearn.tree import DecisionTreeClassifier
 dt_model = DecisionTreeClassifier()
 dt_model.fit(meta_train, train_y)
+
+
 dt_predict = dt_model.predict(meta_test)
 
 print(dt_predict)
