@@ -41,6 +41,10 @@ def get_stacking(clf, x_train, y_train, x_test, n_folds=10):
 
 
 # 使用5个分类算法
+"""
+BaseModel之间的性能差异不能太大，表现差的模型会拖后腿；
+BaseModel之间的相关性尽可能地小，从而能弥补模型的优势
+"""
 
 from sklearn.ensemble import (
     RandomForestClassifier, 
@@ -83,4 +87,5 @@ dt_model.fit(meta_train, train_y)
 
 dt_predict = dt_model.predict(meta_test)
 
+print("-----------------Ensumble Result-------------------------")
 print(dt_predict)
