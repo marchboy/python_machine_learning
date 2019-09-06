@@ -19,7 +19,7 @@ def main():
     turtle.setup(1300, 800, 0, 0)
     python_size = 30   # 运行轨迹的宽度
     turtle.pensize(python_size)
-    turtle.pencolor("red")  # 运行轨迹的颜色
+    turtle.pencolor("green")  # 运行轨迹的颜色
     turtle.seth(0)   # 启动时运行的方向
     drawsnake(30, 60, 5, python_size/2)
 main()

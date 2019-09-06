@@ -15,7 +15,10 @@ def get_stacking(clf, x_train, y_train, x_test, n_folds=10):
     构建Stacking，使用交叉验证的方法得到次级训练集
     x_train, y_train, x_test数据类型为numpy.ndarray
     """
+    # RawData you received~
     train_num, test_num = x_train.shape[0], x_test.shape[0]
+    
+    # 
     second_level_train_set, second_level_test_set = np.zeros((train_num, )), np.zeros((test_num, ))
     test_nfolds_sets = np.zeros((test_num, n_folds))
     print("-------------------------------------------")
@@ -24,17 +27,17 @@ def get_stacking(clf, x_train, y_train, x_test, n_folds=10):
     kf = KFold(n_splits=n_folds)
 
     for i, (train_index, test_index) in enumerate(kf.split(x_train)):
-        print(i, train_index, test_index)
+        # print(i, train_index, test_index)
         x_tra, y_tra = x_train[train_index], y_train[train_index]
         x_tst, _ = x_train[test_index], y_train[test_index]
 
         clf.fit(x_tra, y_tra)
 
         second_level_train_set[test_index] = clf.predict(x_tst)
-        print("==============================================")
-        print(second_level_train_set)
+        # print("==============================================")
+        # print(second_level_train_set)
         test_nfolds_sets[:, i] = clf.predict(x_test)
-        print(test_nfolds_sets)
+        # print(test_nfolds_sets)
 
     second_level_test_set[:] = test_nfolds_sets.mean(axis=1)
     return second_level_train_set, second_level_test_set
@@ -46,6 +49,7 @@ BaseModel之间的性能差异不能太大，表现差的模型会拖后腿；
 BaseModel之间的相关性尽可能地小，从而能弥补模型的优势
 """
 
+import pickle
 from sklearn.ensemble import (
     RandomForestClassifier, 
     AdaBoostClassifier, 
@@ -53,6 +57,7 @@ from sklearn.ensemble import (
     ExtraTreesClassifier
 )
 from sklearn.svm import SVC
+from sklearn.externals import joblib
 
 rf_model = RandomForestClassifier()
 ada_model = AdaBoostClassifier()
@@ -89,3 +94,49 @@ dt_predict = dt_model.predict(meta_test)
 
 print("-----------------Ensumble Result-------------------------")
 print(dt_predict)
+
+joblib.dump(dt_model, './ensumble_model.pkl')
+model = joblib.load('./ensumble_model.pkl')
+
+
+# ------------------------------------------------------------------
+from sklearn import svm
+from sklearn import datasets
+
+iris = datasets.load_iris()
+X,y = iris.data,iris.target
+
+clf = svm.SVC()
+print("Before train: ", clf)
+clf.fit(X,y)
+print("After train: ", clf)
+print(clf.dual_coef_)
+print(clf.support_ )
+print(clf.support_vectors_ )
+print(train_sets)
+
+
+
+import pickle
+with open("svm.txt", "wb") as f:
+    pickle.dump(clf, f)
+
+with open("svm.txt", "rb") as f:
+    clf2 = pickle.load(f)
+  
+
+s = pickle.dumps(clf)
+
+f = open('svm.txt','wb')
+f.write(s)
+f.close()
+f2 = open('svm.txt','rb')
+s2 = f2.read()
+clf2 = pickle.loads(s2)
+clf2.score(X,y)
+
+
+from sklearn.externals import joblib
+joblib.dump(clf,'filename.pkl')
+clf = joblib.load('filename.pkl')
+

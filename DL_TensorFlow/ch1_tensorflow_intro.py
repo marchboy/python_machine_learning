@@ -32,7 +32,7 @@ train_Y = 2 * train_X + np.random.randn(*train_X.shape) * 0.3
 tf.reset_default_graph()
 
 # -----------------创建模型-----------------
-# 占位符
+# 占位符， 为待处理数据生成Tensor对象，在未来graph占一席之地，但这些tensor只有格式和shape，没有实际内容。
 X = tf.placeholder('float')
 Y = tf.placeholder('float')
 
