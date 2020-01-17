@@ -73,3 +73,28 @@ test_transformer = minmaxTransformer.transform(test)
 print(train_transformer)
 print(test_transformer)
 
+import tensorflow as tf
+input = tf.Variable(tf.constant(1.0, shape=[1,5,5,1]))
+
+op1_max_pooling_same = tf.nn.max_pool(input, [1,2,2,1], strides=[1,2,2,1], padding='SAME')
+op2_max_pooling_valid = tf.nn.max_pool(input, [1,2,2,1], strides=[1,2,2,1], padding='VALID')
+
+op3_avg_pooling_same = tf.nn.avg_pool(input, [1,2,2,1], strides=[1,2,2,1], padding='SAME')
+op4_global_pooling_same = tf.nn.avg_pool(input, [1,5,5,1], strides=[1,5,5,1],padding='SAME')
+
+init = tf.global_variables_initializer()
+
+with tf.Session() as sess:
+    sess.run(init)
+    print(sess.run(init))
+    print("op1_max_pooling_same:\n", sess.run(op1_max_pooling_same))
+    print("op2_max_pooling_valid:\n", sess.run(op2_max_pooling_valid))
+    print("op3_max_pooling_same:\n", sess.run(op3_avg_pooling_same))
+    print("op4_global_pooling_same:\n", sess.run(op4_global_pooling_same))
+
+
+from XXPBBase_pb2 import UserInfo
+user_info = UserInfo()
+
+user_info.ParseFromString()
+print(user_info)
