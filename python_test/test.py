@@ -55,13 +55,17 @@ print(len(names))
 # 3）.iloc,.iat，选列是只能是position，不能是列名 
 # 4）df[]只能进行行选择，或列选择，不能同时进行列选择，列选择只能是列名。
 """
+
+
+#%%
 import pandas as pd
 from smart_open import smart_open
 
 def read_csv_file(filename):
-    path = './daguan-classify-2018/data/'
+    path = 'F:\\0003_project\\python_machine_learning\\daguan_classify_2018\\data\\'
+    
     n = 0
-    with smart_open(path + filename, mode='rb') as f:
+    with smart_open(path + filename, mode='r') as f:
         # lines = f.readline()
         # print(lines)
         for line in f:
@@ -73,7 +77,7 @@ def read_csv_file(filename):
 read_csv_file('train_set.csv')
 
 
-
+#%%
 import pandas as pd
 import numpy as np
 import random
@@ -114,7 +118,7 @@ print('-' * 50)
 print(data.loc[1:5])  # 推荐此方法进行行列选择，而不是[],注意与iloc的区别
 
 
-
+print("----------------------------范数------------------------------")
 def vector_norm():
     a = np.arange(9) - 4
     print(a)
@@ -146,9 +150,12 @@ if __name__ == '__main__':
     print(matrix_norm())
 
 
+#%%
+
 from collections import namedtuple
 t = namedtuple('d',['x','y'])
-tt = t(1,2)
+print(t)
+tt = t(1,[3])
 print(tt.x, tt.y)
 
 from types import SimpleNamespace
@@ -164,7 +171,7 @@ print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 
 
-
+#%%
 
 # 散沙---二维数组与矩阵操作
 import numpy as np
@@ -231,6 +238,10 @@ model = sm.OLS(y, Xcvr).fit()
 print(model.summary())
 
 
+
+
+#%%
+
 # PCA 数据降维
 
 import numpy as np
@@ -279,7 +290,7 @@ print(new_data)
 print(pca.explained_variance_ratio_, '\n'*2, pca.explained_variance_)
 
 
-
+#%%
 
 import uuid
 name = 'test_name'
@@ -324,6 +335,8 @@ d['a']['c'].add('100')
 
 
 
+
+#%%
 """
 https://blog.csdn.net/sinat_26917383/article/details/77917881
 """
@@ -403,6 +416,9 @@ print(classification_report(y_test, y_pred, digits=3))
 print(confusion_matrix(y_test, y_pred))
 
 
+
+#%%
+
 from datetime import datetime
 if sklearn_version < '0.18':
     from sklearn.cross_validation import cross_val_score
@@ -420,6 +436,8 @@ print('CV accuracy scores: %s' % scores)
 print('CV accuracy: %.3f +/- %.3f' % (np.mean(scores), np.std(scores)))
 
 
+
+#%%
 
 
 # 分层K折交叉验证，是对K折交叉验证的改进
@@ -455,3 +473,6 @@ model.predict([[17.99,10.38,122.8,1001,0.1184,0.2776,0.3001,0.1471,0.2419,0.0787
 ]])
 
 
+
+
+#%%
